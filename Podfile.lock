@@ -1,0 +1,23 @@
+PODS:
+  - LookinServer (1.0.0)
+  - TWLOCKit (0.0.1)
+
+DEPENDENCIES:
+  - LookinServer
+  - TWLOCKit (from `./TWLOCKit.podspec`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - LookinServer
+
+EXTERNAL SOURCES:
+  TWLOCKit:
+    :path: "./TWLOCKit.podspec"
+
+SPEC CHECKSUMS:
+  LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
+  TWLOCKit: b1589ecfdd080c15682e771b6c50792d885234c1
+
+PODFILE CHECKSUM: 3f5be833d0808302d232d0f6054723efe96f74e6
+
+COCOAPODS: 1.9.1

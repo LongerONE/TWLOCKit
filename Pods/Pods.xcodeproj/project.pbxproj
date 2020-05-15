@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		638FEAAFC575BB76BC6AC055CDDA3506 /* LookinServer */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 74EE83670ABC31CDD77B49DA732104E8 /* Build configuration list for PBXAggregateTarget "LookinServer" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = LookinServer;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		09B83089FD31F005ACF4C92794CDE03A /* TWLLoadingButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 854D2071F8B16857F12CD4693F7B44D7 /* TWLLoadingButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1279B8467BCC23289A7630830A1EC77A /* Pods-TWLOCKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7301C6F6672DB73F630D2A61138155E1 /* Pods-TWLOCKit-dummy.m */; };
+		1468EFA111C3C684AC92977510325AE5 /* TWLButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 995B501E74805014D574000D7CCEE2EA /* TWLButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1566C6E21E6FF6E33BD6B4F031654040 /* TWLUIUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = C758E4FDFD1C17A108D32F3A12DF9C1D /* TWLUIUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		166847DD249372D4C604EEC0E90CF7DE /* TWLGradientButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 250ED97D692FA5EC74F8EDCC20EA91B3 /* TWLGradientButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1BA97A25EB9A9BED0FE2E7B64A578DAC /* UIView+TWL.h in Headers */ = {isa = PBXBuildFile; fileRef = 033CCD03FE89890636B0659C1C06857B /* UIView+TWL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		203E84C5E0DD1CC34971BF66242133EB /* NSString+TWL.h in Headers */ = {isa = PBXBuildFile; fileRef = E4428E11DA1615446D69F9D3B79C8651 /* NSString+TWL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		211D6B142000633BC7BBD4EAE523A2A5 /* TWLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3F3B596B5F6A41791708EBD76E92A4 /* TWLTextField.m */; };
+		25DAB282053116941BCD3180A2FCCC06 /* NSArray+TWL.h in Headers */ = {isa = PBXBuildFile; fileRef = C96878B670164512B98009CEB1B590D5 /* NSArray+TWL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		32BEB3B72BB506BF24B6BFAF55826DE8 /* TWLWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BE23DC32C45C18F955E1C2920D0A2D8 /* TWLWebView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3CB6C3ECE4F8424AFF43CFC16208E709 /* NSMutableArray+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = 7302B7578A64A703A97EEF101E6CC471 /* NSMutableArray+TWL.m */; };
+		4794EE1DA3A66BFD45D59A901C3001F4 /* TWLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C940CF172DAA44C000B0479AFB2AC /* TWLButton.m */; };
+		48B3511EB32417D8841F7186549C71C0 /* TWLBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 1041045E8E10C96A904B414997862AAA /* TWLBlocks.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4B5928FF8B9812C186C1A28EFAC366C3 /* UIColor+TWL.h in Headers */ = {isa = PBXBuildFile; fileRef = F5472EB25219FD4FA64DE10457A38F96 /* UIColor+TWL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		52A614C85DF4FDA903F48E752C59E28D /* TWLGradientNormalButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A739AA13D074E98B72843D65C096F518 /* TWLGradientNormalButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B54BEE75E20BCF86D0D990D75B6E64B /* TWLSendCodeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FC36895AF0504A645F9AADCA21DF8C2 /* TWLSendCodeButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		625B8DD20E15DB9EE4221463499D21C0 /* TWLVoicePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AF7D9AECD582D5221F9FEE632C46D /* TWLVoicePlayer.m */; };
+		6C6E6A06D8846D906C9E18BC72F30730 /* TWLTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 801FB359208D8B05EBAC6C60C5D5C5B8 /* TWLTextField.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		70813868BBEAABCB0E3206309FF13BA6 /* NSMutableDictionary+TWL.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F514C51462E2703373C6EE5F78E9B5 /* NSMutableDictionary+TWL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		78E03176499AA1899F9A6BB81FA5626A /* TWLGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1732F3CE1F267C492E526B010961AB /* TWLGradientButton.m */; };
+		7B2E7819EF2887EAF666606E2539DB96 /* TWLVoicePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9372EF3D9C6975A3087DA1E7128008E0 /* TWLVoicePlayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7ED6E036F5C0FA11C55F27170572F84C /* TWLOCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CFC87469522608FA60B3B781BD9BAD7 /* TWLOCKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81EDE61FA68F2F408570A7738CEEBACF /* TWLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BAEAB30A8B86FA2663E819079A1031 /* TWLImageView.m */; };
+		825764AB3B20C9029B4622BF8D97BB1A /* UIImage+TWL.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D53FA749F11A53F02B50CFF6A29F7A /* UIImage+TWL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		925BF8F97869250398C7989E64CE598D /* TWLView.h in Headers */ = {isa = PBXBuildFile; fileRef = 11E7EF180462A45BE009BDB76E8F0F84 /* TWLView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		92F7BF3464DC27196B6B6BE75B4E8187 /* TWLUIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CDAA0E7017DDB2E51FE54E6B6A3C86CB /* TWLUIUtil.m */; };
+		98AAFC781EF9BBAE07119925BCA5CDD8 /* TWLWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4299E992DAC8AA4FEBE2B4FB6D3BF07F /* TWLWebView.m */; };
+		A3B4164C3AA19C77E25B77D9009356C4 /* TWLSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 427361E88BE6606E9FDE5DD7F83D2081 /* TWLSecurity.m */; };
+		A7C3D1BC271F43C38489449090E08A5A /* TWLSendCodeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 950409A13F4EB69B1C1CAAF90D93D1F2 /* TWLSendCodeButton.m */; };
+		A8E49B212EA892C8D3E9EA057283DADF /* TWLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DB44C24F4503F0BF4ECF62C3683CE6 /* TWLView.m */; };
+		AF88B10C3CB128A794FB921E78C34154 /* NSArray+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E1E7C9E4FCFD5DA9C5E967BBA30226 /* NSArray+TWL.m */; };
+		AFCC9E08ABE262BFDCE0C8C708F93335 /* TWLConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D8AB469CC53EC91362EBFB803317115 /* TWLConst.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C2195987936426EC26F774F769142B83 /* TWLTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = FE293347DE4549E58BD75E326059625E /* TWLTextView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C7C7B5F7637E7DD9EA79E7DB8788A0F3 /* TWLSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CB493B6AB5462CB86879F9491CB9EA6 /* TWLSecurity.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C9E445DAAD42BF37BC564B0F6F255F49 /* NSString+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CBF1E690E79468C68B5D918B02F05 /* NSString+TWL.m */; };
+		CC3868F7396C047D66375FA25F794670 /* TWLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2624B8FBED5B37CCEF43175AF63D0377 /* TWLTextView.m */; };
+		CDCBF79462DA917A3F8C46C506943781 /* NSObject+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C68B885D4CF468A4A4ADCB3F9C9EDF /* NSObject+TWL.m */; };
+		D15A1C2905251D6F2B1CC54F6F6A439C /* NSDictionary+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = A41048440AA94A2926B2F60E8A111ECC /* NSDictionary+TWL.m */; };
+		D22D483050121D507F56E16701E8FB99 /* UIView+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = 0873485BA5D2A2B0E62602B46DC205CC /* UIView+TWL.m */; };
+		D3E3ECED4F82BB76F7ECAD942AC8386C /* NSMutableDictionary+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F875237B999F04116CBAB134AFDAFBC /* NSMutableDictionary+TWL.m */; };
+		D69CAA1A394858AA184D42DCF58BA4B6 /* UIImage+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9784B8382D9DD08C2A2CFCCFE6D18A63 /* UIImage+TWL.m */; };
+		D8E6EDF8EF3BA062AAD0BE8A8C16C0A0 /* TWLOCKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE362DC6A295F8A834DE8AC475FCA7F /* TWLOCKit-dummy.m */; };
+		E057FBB13B36995F84BCD031E0DC7B8D /* NSMutableArray+TWL.h in Headers */ = {isa = PBXBuildFile; fileRef = B42411ABF64E32C49A7AD1802FA7A40D /* NSMutableArray+TWL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E585E9596012176D4FB1009D666613B1 /* NSObject+TWL.h in Headers */ = {isa = PBXBuildFile; fileRef = 446C699FF051404DA1281E5DE40362E1 /* NSObject+TWL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB84283C243AF54BA55ACFF37C88377C /* UIColor+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCF42C8AA6959388F2798B84068F7FB /* UIColor+TWL.m */; };
+		F0B1F2828F6290AE2C173A8708BAF53B /* TWLGradientNormalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E097EFBFC78F29EB2B84B2C6863F21B9 /* TWLGradientNormalButton.m */; };
+		F43ED3A747E718CFA0028C4898170936 /* TWLImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = E45257AF3E1F53067B5FFC5EAB1DBE19 /* TWLImageView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FAE775049541B7199EABF143CCD6E0BB /* NSDictionary+TWL.h in Headers */ = {isa = PBXBuildFile; fileRef = 293F62406A8036BD4F056D9EA1AF629E /* NSDictionary+TWL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FD15AB5B417528BABC1E10131D8ABF3D /* TWLLoadingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E08CBB5080F310BED38A75AE6A98FEDA /* TWLLoadingButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25693F158ED17F19F32DD8F2D34BDE05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93715C7230CF52D0C404E8BFB7D7E4A8;
+			remoteInfo = TWLOCKit;
+		};
+		CA573D645A6E80DFB101484674CF0FD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 638FEAAFC575BB76BC6AC055CDDA3506;
+			remoteInfo = LookinServer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		033CCD03FE89890636B0659C1C06857B /* UIView+TWL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+TWL.h"; sourceTree = "<group>"; };
+		055314A3A9600A5814920BFE262E96E2 /* Pods-TWLOCKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TWLOCKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		078CEB69D11905099C1748469BA16D55 /* libTWLOCKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTWLOCKit.a; path = libTWLOCKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0873485BA5D2A2B0E62602B46DC205CC /* UIView+TWL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+TWL.m"; sourceTree = "<group>"; };
+		08C68B885D4CF468A4A4ADCB3F9C9EDF /* NSObject+TWL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TWL.m"; sourceTree = "<group>"; };
+		0D8AB469CC53EC91362EBFB803317115 /* TWLConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLConst.h; sourceTree = "<group>"; };
+		1041045E8E10C96A904B414997862AAA /* TWLBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLBlocks.h; sourceTree = "<group>"; };
+		11E7EF180462A45BE009BDB76E8F0F84 /* TWLView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLView.h; sourceTree = "<group>"; };
+		250ED97D692FA5EC74F8EDCC20EA91B3 /* TWLGradientButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLGradientButton.h; sourceTree = "<group>"; };
+		2624B8FBED5B37CCEF43175AF63D0377 /* TWLTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWLTextView.m; sourceTree = "<group>"; };
+		26D53FA749F11A53F02B50CFF6A29F7A /* UIImage+TWL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+TWL.h"; sourceTree = "<group>"; };
+		28529B28CF30B07E89105AFA368930E5 /* LookinServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LookinServer.release.xcconfig; sourceTree = "<group>"; };
+		293F62406A8036BD4F056D9EA1AF629E /* NSDictionary+TWL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TWL.h"; sourceTree = "<group>"; };
+		2CB493B6AB5462CB86879F9491CB9EA6 /* TWLSecurity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLSecurity.h; sourceTree = "<group>"; };
+		2CFC87469522608FA60B3B781BD9BAD7 /* TWLOCKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWLOCKit.h; path = TWLOCKit/TWLOCKit/TWLOCKit.h; sourceTree = "<group>"; };
+		3A88A32E4C718AC362CE4B5A6BA8C3BF /* Pods-TWLOCKit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TWLOCKit-frameworks.sh"; sourceTree = "<group>"; };
+		3FC36895AF0504A645F9AADCA21DF8C2 /* TWLSendCodeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLSendCodeButton.h; sourceTree = "<group>"; };
+		427361E88BE6606E9FDE5DD7F83D2081 /* TWLSecurity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWLSecurity.m; sourceTree = "<group>"; };
+		4299E992DAC8AA4FEBE2B4FB6D3BF07F /* TWLWebView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWLWebView.m; sourceTree = "<group>"; };
+		446C699FF051404DA1281E5DE40362E1 /* NSObject+TWL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+TWL.h"; sourceTree = "<group>"; };
+		4B1732F3CE1F267C492E526B010961AB /* TWLGradientButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWLGradientButton.m; sourceTree = "<group>"; };
+		4C8D56EDE71DA516C8B455664411E893 /* TWLOCKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TWLOCKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4F875237B999F04116CBAB134AFDAFBC /* NSMutableDictionary+TWL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+TWL.m"; sourceTree = "<group>"; };
+		55DB44C24F4503F0BF4ECF62C3683CE6 /* TWLView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWLView.m; sourceTree = "<group>"; };
+		61176FA18F859C924096D4B4D7674A1D /* TWLOCKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TWLOCKit.release.xcconfig; sourceTree = "<group>"; };
+		65934F0262582910231B3D691FAC71E0 /* Pods-TWLOCKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TWLOCKit.release.xcconfig"; sourceTree = "<group>"; };
+		6EA64992F18DF1D625E9CB96455A6BA8 /* TWLOCKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TWLOCKit-prefix.pch"; sourceTree = "<group>"; };
+		7301C6F6672DB73F630D2A61138155E1 /* Pods-TWLOCKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TWLOCKit-dummy.m"; sourceTree = "<group>"; };
+		7302B7578A64A703A97EEF101E6CC471 /* NSMutableArray+TWL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+TWL.m"; sourceTree = "<group>"; };
+		801FB359208D8B05EBAC6C60C5D5C5B8 /* TWLTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLTextField.h; sourceTree = "<group>"; };
+		854D2071F8B16857F12CD4693F7B44D7 /* TWLLoadingButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLLoadingButton.h; sourceTree = "<group>"; };
+		85E1E7C9E4FCFD5DA9C5E967BBA30226 /* NSArray+TWL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TWL.m"; sourceTree = "<group>"; };
+		89EDCDE759A667241CA763AE6067C188 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8C5516D7538598FC5E587F55DB724EE7 /* Pods-TWLOCKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TWLOCKit.debug.xcconfig"; sourceTree = "<group>"; };
+		8C9AF7D9AECD582D5221F9FEE632C46D /* TWLVoicePlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWLVoicePlayer.m; sourceTree = "<group>"; };
+		9372EF3D9C6975A3087DA1E7128008E0 /* TWLVoicePlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLVoicePlayer.h; sourceTree = "<group>"; };
+		93BAEAB30A8B86FA2663E819079A1031 /* TWLImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWLImageView.m; sourceTree = "<group>"; };
+		93ECCA68F45D20432FDCF4A12FDB206E /* LookinServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LookinServer.framework; sourceTree = "<group>"; };
+		950409A13F4EB69B1C1CAAF90D93D1F2 /* TWLSendCodeButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWLSendCodeButton.m; sourceTree = "<group>"; };
+		9784B8382D9DD08C2A2CFCCFE6D18A63 /* UIImage+TWL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TWL.m"; sourceTree = "<group>"; };
+		995B501E74805014D574000D7CCEE2EA /* TWLButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLButton.h; sourceTree = "<group>"; };
+		9A7C940CF172DAA44C000B0479AFB2AC /* TWLButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWLButton.m; sourceTree = "<group>"; };
+		9BE23DC32C45C18F955E1C2920D0A2D8 /* TWLWebView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLWebView.h; sourceTree = "<group>"; };
+		9C2CBF1E690E79468C68B5D918B02F05 /* NSString+TWL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+TWL.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DA561B3D314A74EDFA78F2A78550ED2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9EE362DC6A295F8A834DE8AC475FCA7F /* TWLOCKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TWLOCKit-dummy.m"; sourceTree = "<group>"; };
+		A41048440AA94A2926B2F60E8A111ECC /* NSDictionary+TWL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TWL.m"; sourceTree = "<group>"; };
+		A739AA13D074E98B72843D65C096F518 /* TWLGradientNormalButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLGradientNormalButton.h; sourceTree = "<group>"; };
+		A9AA4E84E3A26E6707594129B4768D24 /* LookinServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LookinServer.debug.xcconfig; sourceTree = "<group>"; };
+		B42411ABF64E32C49A7AD1802FA7A40D /* NSMutableArray+TWL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+TWL.h"; sourceTree = "<group>"; };
+		C64CCA290F6C6E8192ACF139BD52AC5F /* libPods-TWLOCKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TWLOCKit.a"; path = "libPods-TWLOCKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C758E4FDFD1C17A108D32F3A12DF9C1D /* TWLUIUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLUIUtil.h; sourceTree = "<group>"; };
+		C7F514C51462E2703373C6EE5F78E9B5 /* NSMutableDictionary+TWL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+TWL.h"; sourceTree = "<group>"; };
+		C96878B670164512B98009CEB1B590D5 /* NSArray+TWL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+TWL.h"; sourceTree = "<group>"; };
+		CDAA0E7017DDB2E51FE54E6B6A3C86CB /* TWLUIUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWLUIUtil.m; sourceTree = "<group>"; };
+		DC3F3B596B5F6A41791708EBD76E92A4 /* TWLTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWLTextField.m; sourceTree = "<group>"; };
+		E08CBB5080F310BED38A75AE6A98FEDA /* TWLLoadingButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWLLoadingButton.m; sourceTree = "<group>"; };
+		E097EFBFC78F29EB2B84B2C6863F21B9 /* TWLGradientNormalButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TWLGradientNormalButton.m; sourceTree = "<group>"; };
+		E4428E11DA1615446D69F9D3B79C8651 /* NSString+TWL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+TWL.h"; sourceTree = "<group>"; };
+		E45257AF3E1F53067B5FFC5EAB1DBE19 /* TWLImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLImageView.h; sourceTree = "<group>"; };
+		EA77D7ED6B401B28F2115B062D822DED /* TWLOCKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TWLOCKit.debug.xcconfig; sourceTree = "<group>"; };
+		F14A0E14646CBA3C68CA18F08E7C43D3 /* Pods-TWLOCKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TWLOCKit-acknowledgements.plist"; sourceTree = "<group>"; };
+		F5472EB25219FD4FA64DE10457A38F96 /* UIColor+TWL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+TWL.h"; sourceTree = "<group>"; };
+		FE293347DE4549E58BD75E326059625E /* TWLTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TWLTextView.h; sourceTree = "<group>"; };
+		FFCF42C8AA6959388F2798B84068F7FB /* UIColor+TWL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TWL.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6724AC0614684D86BEF039BC420CA4A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF44BDD29A4C57D9BB27712F90C94DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07A3E325AF7987EF5D072C45287AE290 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				FE293347DE4549E58BD75E326059625E /* TWLTextView.h */,
+				2624B8FBED5B37CCEF43175AF63D0377 /* TWLTextView.m */,
+			);
+			name = TextView;
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		295240CA93BC3ED5B6EB11214E162660 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				1041045E8E10C96A904B414997862AAA /* TWLBlocks.h */,
+				0D8AB469CC53EC91362EBFB803317115 /* TWLConst.h */,
+			);
+			name = Const;
+			path = TWLOCKit/TWLOCKit/Const;
+			sourceTree = "<group>";
+		};
+		2AB58C7D1BF01380B631C53DC7FA528F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5982A85A59A9FB9D5DAFADBB906E2BF /* LookinServer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2C05EDD684963EC9122EAD8061855872 /* Pods-TWLOCKit */ = {
+			isa = PBXGroup;
+			children = (
+				055314A3A9600A5814920BFE262E96E2 /* Pods-TWLOCKit-acknowledgements.markdown */,
+				F14A0E14646CBA3C68CA18F08E7C43D3 /* Pods-TWLOCKit-acknowledgements.plist */,
+				7301C6F6672DB73F630D2A61138155E1 /* Pods-TWLOCKit-dummy.m */,
+				3A88A32E4C718AC362CE4B5A6BA8C3BF /* Pods-TWLOCKit-frameworks.sh */,
+				8C5516D7538598FC5E587F55DB724EE7 /* Pods-TWLOCKit.debug.xcconfig */,
+				65934F0262582910231B3D691FAC71E0 /* Pods-TWLOCKit.release.xcconfig */,
+			);
+			name = "Pods-TWLOCKit";
+			path = "Target Support Files/Pods-TWLOCKit";
+			sourceTree = "<group>";
+		};
+		2C07352F72EC7433A430E96413060A40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93ECCA68F45D20432FDCF4A12FDB206E /* LookinServer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		463911A867E997426DF8B9ED607A3F98 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9AA4E84E3A26E6707594129B4768D24 /* LookinServer.debug.xcconfig */,
+				28529B28CF30B07E89105AFA368930E5 /* LookinServer.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LookinServer";
+			sourceTree = "<group>";
+		};
+		4D5D1DF8340EA47B3588340AE45F9751 /* TWLOCKit */ = {
+			isa = PBXGroup;
+			children = (
+				2CFC87469522608FA60B3B781BD9BAD7 /* TWLOCKit.h */,
+				A7D26A77FF502CA2BC7C7FA340958D5B /* Category */,
+				295240CA93BC3ED5B6EB11214E162660 /* Const */,
+				83672137B74263551F6DAC92E133918E /* Pod */,
+				DBACEAA6DAB443D6EC47625608BE6C3F /* Security */,
+				E64839F11F73CC405401D9420165F7F2 /* Support Files */,
+				F9A7F86F935A327B84EDF7A42CDC02E1 /* UIView */,
+				C93D321D6F95A978E21A98A0425DFFEA /* Util */,
+			);
+			name = TWLOCKit;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		543486ABFD88E95A9D56092056A723D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11E7EF180462A45BE009BDB76E8F0F84 /* TWLView.h */,
+				55DB44C24F4503F0BF4ECF62C3683CE6 /* TWLView.m */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		6ACA1EE3498487766396EE2B25BB2CB8 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				E45257AF3E1F53067B5FFC5EAB1DBE19 /* TWLImageView.h */,
+				93BAEAB30A8B86FA2663E819079A1031 /* TWLImageView.m */,
+			);
+			name = Image;
+			path = Image;
+			sourceTree = "<group>";
+		};
+		6F1C57BB4435821472E1A8BF839C981E /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				9BE23DC32C45C18F955E1C2920D0A2D8 /* TWLWebView.h */,
+				4299E992DAC8AA4FEBE2B4FB6D3BF07F /* TWLWebView.m */,
+			);
+			name = Web;
+			path = Web;
+			sourceTree = "<group>";
+		};
+		71A561B1B984678F340E359AA09F6F00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C64CCA290F6C6E8192ACF139BD52AC5F /* libPods-TWLOCKit.a */,
+				078CEB69D11905099C1748469BA16D55 /* libTWLOCKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83672137B74263551F6DAC92E133918E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				89EDCDE759A667241CA763AE6067C188 /* LICENSE */,
+				9DA561B3D314A74EDFA78F2A78550ED2 /* README.md */,
+				4C8D56EDE71DA516C8B455664411E893 /* TWLOCKit.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A7D26A77FF502CA2BC7C7FA340958D5B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C96878B670164512B98009CEB1B590D5 /* NSArray+TWL.h */,
+				85E1E7C9E4FCFD5DA9C5E967BBA30226 /* NSArray+TWL.m */,
+				293F62406A8036BD4F056D9EA1AF629E /* NSDictionary+TWL.h */,
+				A41048440AA94A2926B2F60E8A111ECC /* NSDictionary+TWL.m */,
+				B42411ABF64E32C49A7AD1802FA7A40D /* NSMutableArray+TWL.h */,
+				7302B7578A64A703A97EEF101E6CC471 /* NSMutableArray+TWL.m */,
+				C7F514C51462E2703373C6EE5F78E9B5 /* NSMutableDictionary+TWL.h */,
+				4F875237B999F04116CBAB134AFDAFBC /* NSMutableDictionary+TWL.m */,
+				446C699FF051404DA1281E5DE40362E1 /* NSObject+TWL.h */,
+				08C68B885D4CF468A4A4ADCB3F9C9EDF /* NSObject+TWL.m */,
+				E4428E11DA1615446D69F9D3B79C8651 /* NSString+TWL.h */,
+				9C2CBF1E690E79468C68B5D918B02F05 /* NSString+TWL.m */,
+				F5472EB25219FD4FA64DE10457A38F96 /* UIColor+TWL.h */,
+				FFCF42C8AA6959388F2798B84068F7FB /* UIColor+TWL.m */,
+				26D53FA749F11A53F02B50CFF6A29F7A /* UIImage+TWL.h */,
+				9784B8382D9DD08C2A2CFCCFE6D18A63 /* UIImage+TWL.m */,
+				033CCD03FE89890636B0659C1C06857B /* UIView+TWL.h */,
+				0873485BA5D2A2B0E62602B46DC205CC /* UIView+TWL.m */,
+			);
+			name = Category;
+			path = TWLOCKit/TWLOCKit/Category;
+			sourceTree = "<group>";
+		};
+		AE9597FCAED229838B1E1394863AF8EE /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				995B501E74805014D574000D7CCEE2EA /* TWLButton.h */,
+				9A7C940CF172DAA44C000B0479AFB2AC /* TWLButton.m */,
+				250ED97D692FA5EC74F8EDCC20EA91B3 /* TWLGradientButton.h */,
+				4B1732F3CE1F267C492E526B010961AB /* TWLGradientButton.m */,
+				A739AA13D074E98B72843D65C096F518 /* TWLGradientNormalButton.h */,
+				E097EFBFC78F29EB2B84B2C6863F21B9 /* TWLGradientNormalButton.m */,
+				854D2071F8B16857F12CD4693F7B44D7 /* TWLLoadingButton.h */,
+				E08CBB5080F310BED38A75AE6A98FEDA /* TWLLoadingButton.m */,
+				3FC36895AF0504A645F9AADCA21DF8C2 /* TWLSendCodeButton.h */,
+				950409A13F4EB69B1C1CAAF90D93D1F2 /* TWLSendCodeButton.m */,
+			);
+			name = Button;
+			path = Button;
+			sourceTree = "<group>";
+		};
+		C93D321D6F95A978E21A98A0425DFFEA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C758E4FDFD1C17A108D32F3A12DF9C1D /* TWLUIUtil.h */,
+				CDAA0E7017DDB2E51FE54E6B6A3C86CB /* TWLUIUtil.m */,
+				9372EF3D9C6975A3087DA1E7128008E0 /* TWLVoicePlayer.h */,
+				8C9AF7D9AECD582D5221F9FEE632C46D /* TWLVoicePlayer.m */,
+			);
+			name = Util;
+			path = TWLOCKit/TWLOCKit/Util;
+			sourceTree = "<group>";
+		};
+		CC1D2955051D0B0E4E8CAEB1D64EDE41 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C05EDD684963EC9122EAD8061855872 /* Pods-TWLOCKit */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D6F5943E17ABBECD9F2C9C2A0CAF3BA3 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				2AB58C7D1BF01380B631C53DC7FA528F /* Pods */,
+				71A561B1B984678F340E359AA09F6F00 /* Products */,
+				CC1D2955051D0B0E4E8CAEB1D64EDE41 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D5982A85A59A9FB9D5DAFADBB906E2BF /* LookinServer */ = {
+			isa = PBXGroup;
+			children = (
+				2C07352F72EC7433A430E96413060A40 /* Frameworks */,
+				463911A867E997426DF8B9ED607A3F98 /* Support Files */,
+			);
+			name = LookinServer;
+			path = LookinServer;
+			sourceTree = "<group>";
+		};
+		D6F5943E17ABBECD9F2C9C2A0CAF3BA3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D5D1DF8340EA47B3588340AE45F9751 /* TWLOCKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBACEAA6DAB443D6EC47625608BE6C3F /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				2CB493B6AB5462CB86879F9491CB9EA6 /* TWLSecurity.h */,
+				427361E88BE6606E9FDE5DD7F83D2081 /* TWLSecurity.m */,
+			);
+			name = Security;
+			path = TWLOCKit/TWLOCKit/Security;
+			sourceTree = "<group>";
+		};
+		DD1531171BF87204E27193B05FB566DE /* Field */ = {
+			isa = PBXGroup;
+			children = (
+				801FB359208D8B05EBAC6C60C5D5C5B8 /* TWLTextField.h */,
+				DC3F3B596B5F6A41791708EBD76E92A4 /* TWLTextField.m */,
+			);
+			name = Field;
+			path = Field;
+			sourceTree = "<group>";
+		};
+		E64839F11F73CC405401D9420165F7F2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EE362DC6A295F8A834DE8AC475FCA7F /* TWLOCKit-dummy.m */,
+				6EA64992F18DF1D625E9CB96455A6BA8 /* TWLOCKit-prefix.pch */,
+				EA77D7ED6B401B28F2115B062D822DED /* TWLOCKit.debug.xcconfig */,
+				61176FA18F859C924096D4B4D7674A1D /* TWLOCKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/TWLOCKit";
+			sourceTree = "<group>";
+		};
+		F9A7F86F935A327B84EDF7A42CDC02E1 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				AE9597FCAED229838B1E1394863AF8EE /* Button */,
+				DD1531171BF87204E27193B05FB566DE /* Field */,
+				6ACA1EE3498487766396EE2B25BB2CB8 /* Image */,
+				07A3E325AF7987EF5D072C45287AE290 /* TextView */,
+				543486ABFD88E95A9D56092056A723D3 /* View */,
+				6F1C57BB4435821472E1A8BF839C981E /* Web */,
+			);
+			name = UIView;
+			path = TWLOCKit/TWLOCKit/UIView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		74FF8B32A410490D3F8063BF214B507D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7B97C000A6B32B8CB2BC96082DE905E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DAB282053116941BCD3180A2FCCC06 /* NSArray+TWL.h in Headers */,
+				FAE775049541B7199EABF143CCD6E0BB /* NSDictionary+TWL.h in Headers */,
+				E057FBB13B36995F84BCD031E0DC7B8D /* NSMutableArray+TWL.h in Headers */,
+				70813868BBEAABCB0E3206309FF13BA6 /* NSMutableDictionary+TWL.h in Headers */,
+				E585E9596012176D4FB1009D666613B1 /* NSObject+TWL.h in Headers */,
+				203E84C5E0DD1CC34971BF66242133EB /* NSString+TWL.h in Headers */,
+				48B3511EB32417D8841F7186549C71C0 /* TWLBlocks.h in Headers */,
+				1468EFA111C3C684AC92977510325AE5 /* TWLButton.h in Headers */,
+				AFCC9E08ABE262BFDCE0C8C708F93335 /* TWLConst.h in Headers */,
+				166847DD249372D4C604EEC0E90CF7DE /* TWLGradientButton.h in Headers */,
+				52A614C85DF4FDA903F48E752C59E28D /* TWLGradientNormalButton.h in Headers */,
+				F43ED3A747E718CFA0028C4898170936 /* TWLImageView.h in Headers */,
+				09B83089FD31F005ACF4C92794CDE03A /* TWLLoadingButton.h in Headers */,
+				7ED6E036F5C0FA11C55F27170572F84C /* TWLOCKit.h in Headers */,
+				C7C7B5F7637E7DD9EA79E7DB8788A0F3 /* TWLSecurity.h in Headers */,
+				5B54BEE75E20BCF86D0D990D75B6E64B /* TWLSendCodeButton.h in Headers */,
+				6C6E6A06D8846D906C9E18BC72F30730 /* TWLTextField.h in Headers */,
+				C2195987936426EC26F774F769142B83 /* TWLTextView.h in Headers */,
+				1566C6E21E6FF6E33BD6B4F031654040 /* TWLUIUtil.h in Headers */,
+				925BF8F97869250398C7989E64CE598D /* TWLView.h in Headers */,
+				7B2E7819EF2887EAF666606E2539DB96 /* TWLVoicePlayer.h in Headers */,
+				32BEB3B72BB506BF24B6BFAF55826DE8 /* TWLWebView.h in Headers */,
+				4B5928FF8B9812C186C1A28EFAC366C3 /* UIColor+TWL.h in Headers */,
+				825764AB3B20C9029B4622BF8D97BB1A /* UIImage+TWL.h in Headers */,
+				1BA97A25EB9A9BED0FE2E7B64A578DAC /* UIView+TWL.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		29AE92D4BA6CE92234D37F63540D7453 /* Pods-TWLOCKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B61BF2D328EE12EA492A0FAD5D6551ED /* Build configuration list for PBXNativeTarget "Pods-TWLOCKit" */;
+			buildPhases = (
+				74FF8B32A410490D3F8063BF214B507D /* Headers */,
+				33F3D7441185C546C417AE6B5395BD7F /* Sources */,
+				6DF44BDD29A4C57D9BB27712F90C94DD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E31EC58498273F9C6756AA842BCF1B27 /* PBXTargetDependency */,
+				A30987D1B1C7C2AD84B6872BD12FE0C4 /* PBXTargetDependency */,
+			);
+			name = "Pods-TWLOCKit";
+			productName = "Pods-TWLOCKit";
+			productReference = C64CCA290F6C6E8192ACF139BD52AC5F /* libPods-TWLOCKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		93715C7230CF52D0C404E8BFB7D7E4A8 /* TWLOCKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A979BC8509AF02BAE4833A243F41BD04 /* Build configuration list for PBXNativeTarget "TWLOCKit" */;
+			buildPhases = (
+				E7B97C000A6B32B8CB2BC96082DE905E /* Headers */,
+				E4AF64FC64FC1D54E9BE9501979E06AA /* Sources */,
+				6724AC0614684D86BEF039BC420CA4A2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TWLOCKit;
+			productName = TWLOCKit;
+			productReference = 078CEB69D11905099C1748469BA16D55 /* libTWLOCKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 71A561B1B984678F340E359AA09F6F00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				638FEAAFC575BB76BC6AC055CDDA3506 /* LookinServer */,
+				29AE92D4BA6CE92234D37F63540D7453 /* Pods-TWLOCKit */,
+				93715C7230CF52D0C404E8BFB7D7E4A8 /* TWLOCKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33F3D7441185C546C417AE6B5395BD7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1279B8467BCC23289A7630830A1EC77A /* Pods-TWLOCKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4AF64FC64FC1D54E9BE9501979E06AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF88B10C3CB128A794FB921E78C34154 /* NSArray+TWL.m in Sources */,
+				D15A1C2905251D6F2B1CC54F6F6A439C /* NSDictionary+TWL.m in Sources */,
+				3CB6C3ECE4F8424AFF43CFC16208E709 /* NSMutableArray+TWL.m in Sources */,
+				D3E3ECED4F82BB76F7ECAD942AC8386C /* NSMutableDictionary+TWL.m in Sources */,
+				CDCBF79462DA917A3F8C46C506943781 /* NSObject+TWL.m in Sources */,
+				C9E445DAAD42BF37BC564B0F6F255F49 /* NSString+TWL.m in Sources */,
+				4794EE1DA3A66BFD45D59A901C3001F4 /* TWLButton.m in Sources */,
+				78E03176499AA1899F9A6BB81FA5626A /* TWLGradientButton.m in Sources */,
+				F0B1F2828F6290AE2C173A8708BAF53B /* TWLGradientNormalButton.m in Sources */,
+				81EDE61FA68F2F408570A7738CEEBACF /* TWLImageView.m in Sources */,
+				FD15AB5B417528BABC1E10131D8ABF3D /* TWLLoadingButton.m in Sources */,
+				D8E6EDF8EF3BA062AAD0BE8A8C16C0A0 /* TWLOCKit-dummy.m in Sources */,
+				A3B4164C3AA19C77E25B77D9009356C4 /* TWLSecurity.m in Sources */,
+				A7C3D1BC271F43C38489449090E08A5A /* TWLSendCodeButton.m in Sources */,
+				211D6B142000633BC7BBD4EAE523A2A5 /* TWLTextField.m in Sources */,
+				CC3868F7396C047D66375FA25F794670 /* TWLTextView.m in Sources */,
+				92F7BF3464DC27196B6B6BE75B4E8187 /* TWLUIUtil.m in Sources */,
+				A8E49B212EA892C8D3E9EA057283DADF /* TWLView.m in Sources */,
+				625B8DD20E15DB9EE4221463499D21C0 /* TWLVoicePlayer.m in Sources */,
+				98AAFC781EF9BBAE07119925BCA5CDD8 /* TWLWebView.m in Sources */,
+				EB84283C243AF54BA55ACFF37C88377C /* UIColor+TWL.m in Sources */,
+				D69CAA1A394858AA184D42DCF58BA4B6 /* UIImage+TWL.m in Sources */,
+				D22D483050121D507F56E16701E8FB99 /* UIView+TWL.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A30987D1B1C7C2AD84B6872BD12FE0C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TWLOCKit;
+			target = 93715C7230CF52D0C404E8BFB7D7E4A8 /* TWLOCKit */;
+			targetProxy = 25693F158ED17F19F32DD8F2D34BDE05 /* PBXContainerItemProxy */;
+		};
+		E31EC58498273F9C6756AA842BCF1B27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LookinServer;
+			target = 638FEAAFC575BB76BC6AC055CDDA3506 /* LookinServer */;
+			targetProxy = CA573D645A6E80DFB101484674CF0FD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23904D20DF6F173BEAC5F4CB6F43C2CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65934F0262582910231B3D691FAC71E0 /* Pods-TWLOCKit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6730493796C72F035E1A2AFCE52BB49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9AA4E84E3A26E6707594129B4768D24 /* LookinServer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F885F052E906E876DDD06206091F29D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28529B28CF30B07E89105AFA368930E5 /* LookinServer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C4E47091AB8F8F570861633C14AE0AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA77D7ED6B401B28F2115B062D822DED /* TWLOCKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TWLOCKit/TWLOCKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TWLOCKit;
+				PRODUCT_NAME = TWLOCKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DD1954D2B89DFAEDC757BEECDD901455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61176FA18F859C924096D4B4D7674A1D /* TWLOCKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TWLOCKit/TWLOCKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TWLOCKit;
+				PRODUCT_NAME = TWLOCKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E53700B360871B1C8D56B8EC73EB785F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C5516D7538598FC5E587F55DB724EE7 /* Pods-TWLOCKit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74EE83670ABC31CDD77B49DA732104E8 /* Build configuration list for PBXAggregateTarget "LookinServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6730493796C72F035E1A2AFCE52BB49C /* Debug */,
+				7F885F052E906E876DDD06206091F29D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A979BC8509AF02BAE4833A243F41BD04 /* Build configuration list for PBXNativeTarget "TWLOCKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C4E47091AB8F8F570861633C14AE0AB /* Debug */,
+				DD1954D2B89DFAEDC757BEECDD901455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B61BF2D328EE12EA492A0FAD5D6551ED /* Build configuration list for PBXNativeTarget "Pods-TWLOCKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E53700B360871B1C8D56B8EC73EB785F /* Debug */,
+				23904D20DF6F173BEAC5F4CB6F43C2CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
