@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageViewsController">
+            <connections>
+                <outlet property="imgView" destination="yGR-bM-KGZ" id="TrS-ZP-iAA"/>
+                <outlet property="lbl" destination="t14-6h-gXC" id="FOp-HR-RFL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="yGR-bM-KGZ" customClass="TWLImageView">
+                    <rect key="frame" x="40" y="40" width="334" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="2Y2-C0-Bfa"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.40000000000000002"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="ece-rf-QU2">
+                    <rect key="frame" x="38" y="404" width="338" height="31"/>
+                    <connections>
+                        <action selector="slide:" destination="-1" eventType="valueChanged" id="NKn-Al-9ht"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="模糊半径：0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t14-6h-gXC">
+                    <rect key="frame" x="151.5" y="360" width="111" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yGR-bM-KGZ" secondAttribute="trailing" constant="40" id="2Ev-ej-lDx"/>
+                <constraint firstItem="ece-rf-QU2" firstAttribute="top" secondItem="yGR-bM-KGZ" secondAttribute="bottom" constant="64" id="H8i-Kt-ytF"/>
+                <constraint firstItem="yGR-bM-KGZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="Kbw-pj-Rva"/>
+                <constraint firstItem="t14-6h-gXC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SvA-MO-aDT"/>
+                <constraint firstAttribute="trailing" secondItem="ece-rf-QU2" secondAttribute="trailing" constant="40" id="ZMb-vB-zrU"/>
+                <constraint firstItem="ece-rf-QU2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="ckf-FX-YK3"/>
+                <constraint firstItem="yGR-bM-KGZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="hR1-CG-uu9"/>
+                <constraint firstItem="t14-6h-gXC" firstAttribute="top" secondItem="yGR-bM-KGZ" secondAttribute="bottom" constant="20" id="uDY-QQ-5Hr"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="63.616071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1" width="395" height="541"/>
+    </resources>
+</document>
