@@ -7,7 +7,6 @@
 //
 
 #import "TableViewController.h"
-#import "Test.h"
 
 #define VC_CONF_DICT @{\
     @"Buttons" : @"ButtonsController",\
@@ -28,11 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [Test test];
-    
-    
-    NSLog(@"ok");
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

@@ -7,7 +7,7 @@ target 'TWLOCKit' do
   # Comment the next line if you don't want to use dynamic frameworks
   #use_frameworks!
 
-  #pod 'TWLOCKit', :path => "./TWLOCKit.podspec"
+  pod 'TWLOCKit', :path => "./TWLOCKit.podspec"
 
   # Pods for TWLOCKit
   pod 'LookinServer', :configurations => ['Debug']
