@@ -7,6 +7,7 @@
 //
 
 #import "SecurityController.h"
+#import "TWLOCKit.h"
 
 @interface SecurityController ()
 

@@ -7,6 +7,7 @@
 //
 
 #import "ImageViewsController.h"
+#import "TWLOCKit.h"
 
 @interface ImageViewsController ()
 

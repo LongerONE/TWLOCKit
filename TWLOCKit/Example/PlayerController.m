@@ -7,6 +7,7 @@
 //
 
 #import "PlayerController.h"
+#import "TWLOCKit.h"
 
 @interface PlayerController ()
 

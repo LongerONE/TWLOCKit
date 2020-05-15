@@ -7,6 +7,7 @@
 //
 
 #import "ButtonsController.h"
+#import "TWLOCKit.h"
 
 @interface ButtonsController ()
 
