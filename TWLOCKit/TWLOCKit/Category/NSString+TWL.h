@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (TWL)
 
+/// 生成指定长度的随机字符串
+/// @param length length description
++ (NSString *)twl_randomStringWithLength:(int)length;
+
 
 /// 是否为正整数
 - (BOOL)twl_isPositiveInteger;
@@ -21,9 +25,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)twl_isMobilePhoneNumber;
 
 
-/// 生成指定长度的随机字符串
-/// @param length length description
-+ (NSString *)twl_randomStringWithLength:(int)length;
+- (NSString *)twl_md5;
+
+- (NSString *)twl_sha1;
+
+- (NSString *)twl_sha256;
 
 @end
 

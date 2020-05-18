@@ -77,6 +77,12 @@
     
     
     NSLog(@"deRSA: %@", deRSA);
+    
+    
+    
+    NSLog(@"MD5: %@", string.twl_md5);
+    NSLog(@"SHA1: %@", string.twl_sha1);
+    NSLog(@"SHA256: %@", string.twl_sha256);
 }
 
 /*
