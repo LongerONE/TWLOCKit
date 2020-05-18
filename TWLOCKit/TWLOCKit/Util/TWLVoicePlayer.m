@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) AVPlayer *avPlayer;
 @property (nonatomic, strong) AVPlayerItem *item;
+@property (nonatomic, strong) NSURL *voiceURL;
 
 @property (nonatomic, copy) TWLVoidBlock finishBlock;
 @property (nonatomic, copy) TWLErrorBlock failedBlock;
@@ -76,6 +77,7 @@ static TWLVoicePlayer *player = nil;
         
         self.finishBlock = finishBlock;
         self.failedBlock = failedBlock;
+        self.voiceURL = url;
         
         self.item = [AVPlayerItem playerItemWithURL:url];
         self.avPlayer = [AVPlayer playerWithPlayerItem: self.item];
@@ -113,6 +115,9 @@ static TWLVoicePlayer *player = nil;
     return self.avPlayer.rate != 0 && self.avPlayer.error == nil;
 }
 
+- (NSURL *)currentPlayingURL {
+    return self.voiceURL;
+}
 
 - (void)callBackFinish {
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -121,6 +126,7 @@ static TWLVoicePlayer *player = nil;
             
             self.finishBlock = nil;
             self.failedBlock = nil;
+            self.voiceURL = nil;
             
             [self removeObserver];
         }
@@ -134,6 +140,7 @@ static TWLVoicePlayer *player = nil;
             
             self.finishBlock = nil;
             self.failedBlock = nil;
+            self.voiceURL = nil;
             
             [self removeObserver];
         }

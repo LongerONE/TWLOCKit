@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否正在播放
 - (BOOL)isPlaying;
 
+/// 正在播放的音频
+- (NSURL *)currentPlayingURL;
+
 @end
 
 NS_ASSUME_NONNULL_END
