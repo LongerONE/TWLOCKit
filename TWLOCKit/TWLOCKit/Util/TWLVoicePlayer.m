@@ -81,6 +81,13 @@ static TWLVoicePlayer *player = nil;
         self.avPlayer = [AVPlayer playerWithPlayerItem: self.item];
         [self.avPlayer addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
         [self.item addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
+        
+        NSError *sessionError;
+        NSError *activeError;
+        AVAudioSession *session = [AVAudioSession sharedInstance];
+        [session setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers error:&sessionError];
+        [session setActive:YES error:&activeError];
+        
         [self.avPlayer play];
     });
 }
