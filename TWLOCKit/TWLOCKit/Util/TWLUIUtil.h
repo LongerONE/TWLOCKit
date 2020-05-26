@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (CGFloat)safeAreaRight;
 
++ (UIViewController *)visibleViewController;
+
 @end
 
 NS_ASSUME_NONNULL_END

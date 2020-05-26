@@ -7,6 +7,8 @@
 //
 
 #import "TWLUIUtil.h"
+#import "AppDelegate.h"
+#import "TWLConst.h"
 
 @implementation TWLUIUtil
 
@@ -40,6 +42,29 @@
         return UIApplication.sharedApplication.keyWindow.safeAreaInsets.right;
     } else {
         return UIApplication.sharedApplication.keyWindow.layoutMargins.right;
+    }
+}
+
+
++ (UIViewController *)visibleViewController {
+    UIViewController *rootViewController = TWL_APPDELEGATE.window.rootViewController;
+    return [self visibleViewController:rootViewController];
+}
+
+
++ (UIViewController *)visibleViewController:(UIViewController *)rootViewController {
+    if (rootViewController.presentingViewController) {
+        return [self visibleViewController:rootViewController.presentingViewController];
+    } else if ([rootViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *navigationController = (UINavigationController *)rootViewController;
+        UIViewController *lastViewController = [navigationController visibleViewController];
+        return [self visibleViewController:lastViewController];
+    } else  if ([rootViewController isKindOfClass:[UITabBarController class]])  {
+        UITabBarController *tabBarController = (UITabBarController *)rootViewController;
+        UIViewController *selectedViewController = tabBarController.selectedViewController;
+        return [self visibleViewController:selectedViewController];
+    } else {
+        return rootViewController;
     }
 }
 

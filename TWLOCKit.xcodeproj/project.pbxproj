@@ -215,9 +215,9 @@
 		E99F37D4247235E9003F4D4C /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				E99F37D7247235E9003F4D4C /* TWLUIUtil.h */,
 				E99F37D5247235E9003F4D4C /* TWLUIUtil.m */,
 				E99F37D6247235E9003F4D4C /* TWLVoicePlayer.h */,
-				E99F37D7247235E9003F4D4C /* TWLUIUtil.h */,
 				E99F37D8247235E9003F4D4C /* TWLVoicePlayer.m */,
 			);
 			path = Util;
