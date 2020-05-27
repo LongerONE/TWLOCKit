@@ -7,7 +7,6 @@
 //
 
 #import "TWLUIUtil.h"
-#import "AppDelegate.h"
 #import "TWLConst.h"
 
 @implementation TWLUIUtil
@@ -47,7 +46,7 @@
 
 
 + (UIViewController *)visibleViewController {
-    UIViewController *rootViewController = TWL_APPDELEGATE.window.rootViewController;
+    UIViewController *rootViewController = [[UIApplication sharedApplication] keyWindow].rootViewController;
     return [self visibleViewController:rootViewController];
 }
 
