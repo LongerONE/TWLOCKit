@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TWLSecurity : NSObject
 
 
-#pragma mark - AES
+#pragma mark - AES - CBC
 /// AES CBC 加密字符串 128
 /// @param content 内容
 /// @param key 密钥 长度：16
@@ -40,6 +40,33 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param keyData 密钥
 /// @param ivData 向量
 + (NSData *)aesCBCDecryptData:(NSData *)contentData key:(NSData *)keyData iv:(NSData *)ivData;
+
+
+
+#pragma mark - AES - ECB
+
+/// AES ECB 模式加密字符串
+/// @param content 内容
+/// @param key 密钥
++ (NSString *)aesECBEncryptString:(NSString *)content key:(NSString *)key;
+
+
+/// AES ECB 模式解密字符串
+/// @param content 内容
+/// @param key 密钥
++ (NSString *)aesECBDecryptBase64String:(NSString *)content key:(NSString *)key;
+
+
+/// AES ECB 模式加密二进制
+/// @param contentData 内容
+/// @param keyData 密钥
++ (NSData *)aesECBEncryptData:(NSData *)contentData key:(NSData *)keyData;
+
+
+/// AES ECB 模式解密二进制
+/// @param contentData 内容
+/// @param keyData 密钥
++ (NSData *)aesECBDecryptData:(NSData *)contentData key:(NSData *)keyData;
 
 
 #pragma mark - RSA 公钥加密

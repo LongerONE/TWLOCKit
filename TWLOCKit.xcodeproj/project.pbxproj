@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9735E49247DFB7D008C9D1D /* TWLVideoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9735E48247DFB7D008C9D1D /* TWLVideoUtil.m */; };
 		E983F29724639D630023CB8A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E983F29624639D630023CB8A /* TableViewController.m */; };
 		E983F29B24639E3A0023CB8A /* ButtonsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E983F29924639E3A0023CB8A /* ButtonsController.m */; };
 		E983F29C24639E3A0023CB8A /* ButtonsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E983F29A24639E3A0023CB8A /* ButtonsController.xib */; };
@@ -53,6 +54,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9735E47247DFB7D008C9D1D /* TWLVideoUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWLVideoUtil.h; sourceTree = "<group>"; };
+		E9735E48247DFB7D008C9D1D /* TWLVideoUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWLVideoUtil.m; sourceTree = "<group>"; };
 		E983F29524639D630023CB8A /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		E983F29624639D630023CB8A /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		E983F29824639E3A0023CB8A /* ButtonsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonsController.h; sourceTree = "<group>"; };
@@ -219,6 +222,8 @@
 				E99F37D5247235E9003F4D4C /* TWLUIUtil.m */,
 				E99F37D6247235E9003F4D4C /* TWLVoicePlayer.h */,
 				E99F37D8247235E9003F4D4C /* TWLVoicePlayer.m */,
+				E9735E47247DFB7D008C9D1D /* TWLVideoUtil.h */,
+				E9735E48247DFB7D008C9D1D /* TWLVideoUtil.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -457,6 +462,7 @@
 				E99F3803247235E9003F4D4C /* NSMutableDictionary+TWL.m in Sources */,
 				E99F380E247235E9003F4D4C /* TWLButton.m in Sources */,
 				E9F3A477246CF2D1001205AE /* PlayerController.m in Sources */,
+				E9735E49247DFB7D008C9D1D /* TWLVideoUtil.m in Sources */,
 				E99F3806247235E9003F4D4C /* TWLTextView.m in Sources */,
 				E99F380D247235E9003F4D4C /* TWLGradientNormalButton.m in Sources */,
 				E99F3809247235E9003F4D4C /* TWLImageView.m in Sources */,

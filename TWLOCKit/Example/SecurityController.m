@@ -21,6 +21,8 @@
     
     NSString *string = @"哈哈哈哈哈哈";
     
+    
+    NSLog(@"================ CBC ==============");
     NSString *aesKey = @"J3xB8kyTE1aN5IPY";
     NSLog(@"aesKey: %@", aesKey);
     NSString *aesIV = @"qb5IroWAjF4LoboP";
@@ -32,7 +34,14 @@
     NSString *deAes = [TWLSecurity aesCBCDecryptBase64String:enAes key:aesKey iv:aesIV];
     NSLog(@"deAes: %@", deAes);
     
+    NSLog(@"================ ECB ==============");
+    NSString *ecbEnAes = [TWLSecurity aesECBEncryptString:string key:aesKey];
+    NSLog(@"ecbEnAes: %@", ecbEnAes);
+    NSString *ecbDeAes = [TWLSecurity aesECBDecryptBase64String:ecbEnAes key:aesKey];
+    NSLog(@"ecbDeAes: %@", ecbDeAes);
     
+    
+    NSLog(@"================ RSA ==============");
     NSString *publicKey = @"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA50qyGwCWxMmukfbQwMCg\
     7KQvtFJChP6i8zahQkinPuLGqL05cnTmSWrRivK9HCGnw26xK5jt1ZdPGBN9cqZI\
     9NXQ9fnqfsmRX9kB/eXQLHTPTPRFsWSxStiYaOp7cgjTw0l/DT4XnqefP9h18iuN\
