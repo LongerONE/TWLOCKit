@@ -40,6 +40,8 @@
 #import <TWLOCKit/TWLUIUtil.h>
 #import <TWLOCKit/TWLVoicePlayer.h>
 #import <TWLOCKit/TWLVideoUtil.h>
+#import <TWLOCKit/TWLAlert.h>
+
 
 #else
 
@@ -70,6 +72,7 @@
 #import "TWLUIUtil.h"
 #import "TWLVoicePlayer.h"
 #import "TWLVideoUtil.h"
+#import "TWLAlert.h"
 
 #endif
 

@@ -40,6 +40,9 @@
 		E99F380E247235E9003F4D4C /* TWLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F37F0247235E9003F4D4C /* TWLButton.m */; };
 		E99F380F247235E9003F4D4C /* TWLView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F37F3247235E9003F4D4C /* TWLView.m */; };
 		E99F3810247235E9003F4D4C /* TWLSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F37F5247235E9003F4D4C /* TWLSecurity.m */; };
+		E9AC438F247F549A007EC4C8 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AC438D247F549A007EC4C8 /* AlertViewController.m */; };
+		E9AC4390247F549A007EC4C8 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9AC438E247F549A007EC4C8 /* AlertViewController.xib */; };
+		E9AC4393247F5E64007EC4C8 /* TWLAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AC4392247F5E64007EC4C8 /* TWLAlert.m */; };
 		E9BC4226246E3C060092831E /* SecurityController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BC4224246E3C060092831E /* SecurityController.m */; };
 		E9BC4227246E3C060092831E /* SecurityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BC4225246E3C060092831E /* SecurityController.xib */; };
 		E9BC427B246E7B180092831E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BC427A246E7B180092831E /* AVFoundation.framework */; };
@@ -119,6 +122,11 @@
 		E99F37F8247235E9003F4D4C /* TWLBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLBlocks.h; sourceTree = "<group>"; };
 		E99F37F9247235E9003F4D4C /* TWLConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLConst.h; sourceTree = "<group>"; };
 		E99F37FA247235E9003F4D4C /* TWLOCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLOCKit.h; sourceTree = "<group>"; };
+		E9AC438C247F549A007EC4C8 /* AlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		E9AC438D247F549A007EC4C8 /* AlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
+		E9AC438E247F549A007EC4C8 /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
+		E9AC4391247F5E64007EC4C8 /* TWLAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWLAlert.h; sourceTree = "<group>"; };
+		E9AC4392247F5E64007EC4C8 /* TWLAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWLAlert.m; sourceTree = "<group>"; };
 		E9BC4223246E3C060092831E /* SecurityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurityController.h; sourceTree = "<group>"; };
 		E9BC4224246E3C060092831E /* SecurityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecurityController.m; sourceTree = "<group>"; };
 		E9BC4225246E3C060092831E /* SecurityController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecurityController.xib; sourceTree = "<group>"; };
@@ -173,6 +181,9 @@
 				E9BC4223246E3C060092831E /* SecurityController.h */,
 				E9BC4224246E3C060092831E /* SecurityController.m */,
 				E9BC4225246E3C060092831E /* SecurityController.xib */,
+				E9AC438C247F549A007EC4C8 /* AlertViewController.h */,
+				E9AC438D247F549A007EC4C8 /* AlertViewController.m */,
+				E9AC438E247F549A007EC4C8 /* AlertViewController.xib */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -224,6 +235,8 @@
 				E99F37D8247235E9003F4D4C /* TWLVoicePlayer.m */,
 				E9735E47247DFB7D008C9D1D /* TWLVideoUtil.h */,
 				E9735E48247DFB7D008C9D1D /* TWLVideoUtil.m */,
+				E9AC4391247F5E64007EC4C8 /* TWLAlert.h */,
+				E9AC4392247F5E64007EC4C8 /* TWLAlert.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -432,6 +445,7 @@
 				E983F2A82463A8380023CB8A /* ImageViewsController.xib in Resources */,
 				E9F3A478246CF2D1001205AE /* PlayerController.xib in Resources */,
 				E983F2B62463B9DA0023CB8A /* TextViewController.xib in Resources */,
+				E9AC4390247F549A007EC4C8 /* AlertViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,9 +474,11 @@
 				E983F2A72463A8380023CB8A /* ImageViewsController.m in Sources */,
 				E99F380C247235E9003F4D4C /* TWLGradientButton.m in Sources */,
 				E99F3803247235E9003F4D4C /* NSMutableDictionary+TWL.m in Sources */,
+				E9AC4393247F5E64007EC4C8 /* TWLAlert.m in Sources */,
 				E99F380E247235E9003F4D4C /* TWLButton.m in Sources */,
 				E9F3A477246CF2D1001205AE /* PlayerController.m in Sources */,
 				E9735E49247DFB7D008C9D1D /* TWLVideoUtil.m in Sources */,
+				E9AC438F247F549A007EC4C8 /* AlertViewController.m in Sources */,
 				E99F3806247235E9003F4D4C /* TWLTextView.m in Sources */,
 				E99F380D247235E9003F4D4C /* TWLGradientNormalButton.m in Sources */,
 				E99F3809247235E9003F4D4C /* TWLImageView.m in Sources */,

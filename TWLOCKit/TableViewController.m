@@ -8,26 +8,30 @@
 
 #import "TableViewController.h"
 
-#define VC_CONF_DICT @{\
-    @"Buttons" : @"ButtonsController",\
-    @"ImageViews" : @"ImageViewsController",\
-    @"Fields" : @"FieldController",\
-    @"TextView" : @"TextViewController",\
-    @"Player" : @"PlayerController",\
-    @"Security" : @"SecurityController" \
+
+
+@interface TableViewController () {
+    NSDictionary *VC_CONF_DICT;
 }
-
-
-@interface TableViewController ()
 
 @end
 
 @implementation TableViewController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    
+   VC_CONF_DICT = @{
+           @"Buttons" : @"ButtonsController",
+           @"ImageViews" : @"ImageViewsController",
+           @"Fields" : @"FieldController",
+           @"TextView" : @"TextViewController",
+           @"Player" : @"PlayerController",
+           @"Security" : @"SecurityController",
+           @"Alert" : @"AlertViewController"
+       };
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
