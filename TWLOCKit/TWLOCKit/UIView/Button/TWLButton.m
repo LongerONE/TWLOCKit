@@ -10,6 +10,7 @@
 #import "TWLConst.h"
 
 #import "UIView+TWL.h"
+#import "UIColor+TWL.h"
 
 @interface TWLButton()
 
@@ -140,10 +141,7 @@
 - (void)setSeletedBgColor:(UIColor *)seletedBgColor {
     _seletedBgColor = seletedBgColor;
     
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1.0, 1.0)];
-    view.backgroundColor = seletedBgColor;
-    UIImage *image = [view twl_convertToImage];
-    [self setBackgroundImage:image forState:UIControlStateSelected];
+    [self setBackgroundImage:[seletedBgColor twl_image] forState:UIControlStateSelected];
 }
 
 

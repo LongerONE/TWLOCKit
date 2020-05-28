@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 转换当前颜色到 Hex
 - (NSString *)twl_hexString;
 
+/// 生成 1 像素图片，可用于背景色填充等场景
+- (UIImage *)twl_image;
+
 @end
 
 NS_ASSUME_NONNULL_END

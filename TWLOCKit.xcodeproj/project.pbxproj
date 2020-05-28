@@ -52,6 +52,7 @@
 		E9C9877A2459277F001F1DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C987792459277F001F1DA6 /* Assets.xcassets */; };
 		E9C9877D2459277F001F1DA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C9877B2459277F001F1DA6 /* LaunchScreen.storyboard */; };
 		E9C987802459277F001F1DA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9877F2459277F001F1DA6 /* main.m */; };
+		E9E9483A247F994E00DA2C41 /* NSDate+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E94839247F994E00DA2C41 /* NSDate+TWL.m */; };
 		E9F3A477246CF2D1001205AE /* PlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F3A475246CF2D1001205AE /* PlayerController.m */; };
 		E9F3A478246CF2D1001205AE /* PlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9F3A476246CF2D1001205AE /* PlayerController.xib */; };
 /* End PBXBuildFile section */
@@ -140,6 +141,8 @@
 		E9C9877C2459277F001F1DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9C9877E2459277F001F1DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9C9877F2459277F001F1DA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9E94838247F994E00DA2C41 /* NSDate+TWL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+TWL.h"; sourceTree = "<group>"; };
+		E9E94839247F994E00DA2C41 /* NSDate+TWL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TWL.m"; sourceTree = "<group>"; };
 		E9F3A474246CF2D1001205AE /* PlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerController.h; sourceTree = "<group>"; };
 		E9F3A475246CF2D1001205AE /* PlayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerController.m; sourceTree = "<group>"; };
 		E9F3A476246CF2D1001205AE /* PlayerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerController.xib; sourceTree = "<group>"; };
@@ -222,6 +225,8 @@
 				E99F37CC247235E9003F4D4C /* UIImage+TWL.m */,
 				E99F37CF247235E9003F4D4C /* UIView+TWL.h */,
 				E99F37C4247235E8003F4D4C /* UIView+TWL.m */,
+				E9E94838247F994E00DA2C41 /* NSDate+TWL.h */,
+				E9E94839247F994E00DA2C41 /* NSDate+TWL.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -293,16 +298,16 @@
 		E99F37E6247235E9003F4D4C /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				E99F37E7247235E9003F4D4C /* TWLLoadingButton.m */,
-				E99F37E8247235E9003F4D4C /* TWLGradientNormalButton.h */,
-				E99F37E9247235E9003F4D4C /* TWLSendCodeButton.m */,
-				E99F37EA247235E9003F4D4C /* TWLGradientButton.m */,
 				E99F37EB247235E9003F4D4C /* TWLButton.h */,
+				E99F37F0247235E9003F4D4C /* TWLButton.m */,
+				E99F37EF247235E9003F4D4C /* TWLGradientButton.h */,
+				E99F37EA247235E9003F4D4C /* TWLGradientButton.m */,
+				E99F37E8247235E9003F4D4C /* TWLGradientNormalButton.h */,
 				E99F37EC247235E9003F4D4C /* TWLGradientNormalButton.m */,
 				E99F37ED247235E9003F4D4C /* TWLLoadingButton.h */,
+				E99F37E7247235E9003F4D4C /* TWLLoadingButton.m */,
 				E99F37EE247235E9003F4D4C /* TWLSendCodeButton.h */,
-				E99F37EF247235E9003F4D4C /* TWLGradientButton.h */,
-				E99F37F0247235E9003F4D4C /* TWLButton.m */,
+				E99F37E9247235E9003F4D4C /* TWLSendCodeButton.m */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -480,6 +485,7 @@
 				E9735E49247DFB7D008C9D1D /* TWLVideoUtil.m in Sources */,
 				E9AC438F247F549A007EC4C8 /* AlertViewController.m in Sources */,
 				E99F3806247235E9003F4D4C /* TWLTextView.m in Sources */,
+				E9E9483A247F994E00DA2C41 /* NSDate+TWL.m in Sources */,
 				E99F380D247235E9003F4D4C /* TWLGradientNormalButton.m in Sources */,
 				E99F3809247235E9003F4D4C /* TWLImageView.m in Sources */,
 				E99F3810247235E9003F4D4C /* TWLSecurity.m in Sources */,

@@ -34,6 +34,7 @@
 #import <TWLOCKit/UIView+TWL.h>
 #import <TWLOCKit/UIImage+TWL.h>
 #import <TWLOCKit/NSObject+TWL.h>
+#import <TWLOCKit/NSDate+TWL.h>
 
 #import <TWLOCKit/TWLSecurity.h>
 
@@ -67,6 +68,7 @@
 #import "UIView+TWL.h"
 #import "UIImage+TWL.h"
 #import "NSObject+TWL.h"
+#import "NSDate+TWL.h"
 
 #import "TWLSecurity.h"
 #import "TWLUIUtil.h"

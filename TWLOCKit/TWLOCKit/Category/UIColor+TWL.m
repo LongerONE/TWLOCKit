@@ -7,6 +7,7 @@
 //
 
 #import "UIColor+TWL.h"
+#import "UIView+TWL.h"
 
 @implementation UIColor (TWL)
 
@@ -69,6 +70,13 @@
     return [NSString stringWithFormat:@"#%02X%02X%02X", (int)((CGColorGetComponents(color.CGColor))[0]*255.0),
             (int)((CGColorGetComponents(color.CGColor))[1]*255.0),
             (int)((CGColorGetComponents(color.CGColor))[2]*255.0)];
+}
+
+
+- (UIImage *)twl_image {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1.0, 1.0)];
+    view.backgroundColor = self;
+    return [view twl_convertToImage];
 }
 
 @end
