@@ -145,7 +145,7 @@
 
 - (void)dealloc {
     [self.wkWebView removeObserver:self forKeyPath:@"estimatedProgress"];
-    [self.wkWebView removeObserver:self forKeyPath:@"contentSize"];
+    [self.wkWebView.scrollView removeObserver:self forKeyPath:@"contentSize"];
 }
 
 
