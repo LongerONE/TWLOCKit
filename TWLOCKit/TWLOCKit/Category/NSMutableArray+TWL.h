@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSMutableArray (TWL)
 
+
+/// 安全添加值（nil 时不添加）
+- (void)twl_addObject:(id _Nullable)obj;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -10,4 +10,15 @@
 
 @implementation NSMutableArray (TWL)
 
+
+- (void)twl_addObject:(id _Nullable)obj {
+    if ([obj isEqual:[NSNull null]]) {
+       return;
+    } else if (!obj) {
+        return;
+    } else {
+        [self addObject:obj];
+    }
+}
+
 @end
