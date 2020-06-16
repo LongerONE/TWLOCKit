@@ -8,6 +8,7 @@
 
 #import "NSString+TWL.h"
 #import <CommonCrypto/CommonCrypto.h>
+#import <CoreImage/CoreImage.h>
 
 @implementation NSString (TWL)
 
@@ -74,6 +75,50 @@
     }
     return [hash copy];
 }
+
+
+- (UIImage *)twl_qrcodeWithWidth:(CGFloat)width {
+ 
+    // 1.创建滤镜对象
+    CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+    
+    // 2.恢复默认设置
+    [filter setDefaults];
+    
+    // 3.设置数据
+    NSData *infoData = [self dataUsingEncoding:NSUTF8StringEncoding];
+    [filter setValue:infoData forKey:@"inputMessage"];
+    
+    // 4.生成二维码
+    CIImage *outputImage = [filter outputImage];
+    
+    CGRect extent = CGRectIntegral(outputImage.extent);
+
+    CGFloat size = width * UIScreen.mainScreen.scale;
+    
+    CGFloat scale = MIN(size/CGRectGetWidth(extent), size/CGRectGetHeight(extent));
+    
+    // 1.创建bitmap
+    size_t imageWidth = CGRectGetWidth(extent)  * scale;
+    size_t imageHeight = CGRectGetHeight(extent) * scale;
+    CGColorSpaceRef cs = CGColorSpaceCreateDeviceCMYK();
+    CGContextRef bitmapRef = CGBitmapContextCreate(nil, imageWidth, imageHeight, 8, 0, cs, (CGBitmapInfo)kCGImageAlphaNone);
+    
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CGImageRef bitmapImage = [context createCGImage:outputImage fromRect:extent];
+    CGContextSetInterpolationQuality(bitmapRef, kCGInterpolationNone);
+    CGContextScaleCTM(bitmapRef, scale, scale);
+    CGContextDrawImage(bitmapRef, extent, bitmapImage);
+    
+    // 2.保存bitmap
+    CGImageRef scaledImage = CGBitmapContextCreateImage(bitmapRef);
+    
+    CGContextRelease(bitmapRef);
+    CGImageRelease(bitmapImage);
+    
+    return [UIImage imageWithCGImage:scaledImage];
+}
+
 
 
 @end
