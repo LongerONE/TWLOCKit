@@ -15,11 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param index index
 - (id)twl_objectAtIndex:(NSUInteger)index;
 
-
-/// 安全添加值（nil 时不添加）
-/// @param obj 新数组
-- (NSArray *)twl_addObject:(id _Nullable)obj;
-
 @end
 
 NS_ASSUME_NONNULL_END

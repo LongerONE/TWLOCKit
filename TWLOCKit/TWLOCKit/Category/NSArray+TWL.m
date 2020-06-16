@@ -19,16 +19,4 @@
     }
 }
 
-- (NSArray *)twl_addObject:(id _Nullable)obj {
-    if ([obj isEqual:[NSNull null]]) {
-        return self;
-    } else if (!obj) {
-        return self;
-    } else {
-        NSMutableArray *muArray = [NSMutableArray arrayWithArray:self];
-        [muArray addObject:obj];
-        return [NSArray arrayWithArray:muArray];
-    }
-}
-
 @end

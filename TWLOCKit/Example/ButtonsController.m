@@ -21,6 +21,14 @@
     
     NSLog(@"%@", [[TWLUIUtil visibleViewController] description]);
     
+    
+    NSMutableArray *arr = [NSMutableArray array];
+    NSString *a;
+    NSString *b = @"b";
+    [arr twl_addObject:a];
+    [arr twl_addObject:b];
+    
+    NSLog(@"%@", arr.description);
 }
 
 
