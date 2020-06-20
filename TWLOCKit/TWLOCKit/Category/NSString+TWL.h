@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,6 +31,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)twl_sha1;
 
 - (NSString *)twl_sha256;
+
+
+/// 生成二维码
+/// @param width 宽度
+- (UIImage *)twl_qrcodeWithWidth:(CGFloat)width;
 
 @end
 
