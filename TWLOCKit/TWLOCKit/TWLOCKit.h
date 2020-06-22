@@ -16,6 +16,7 @@
 
 #import <TWLOCKit/TWLConst.h>
 #import <TWLOCKit/TWLBlocks.h>
+#import <TWLOCKit/TWLMacro.h>
 #import <TWLOCKit/TWLView.h>
 #import <TWLOCKit/TWLWebView.h>
 #import <TWLOCKit/TWLButton.h>
@@ -50,6 +51,7 @@
 
 #import "TWLConst.h"
 #import "TWLBlocks.h"
+#import "TWLMacro.h"
 #import "TWLView.h"
 #import "TWLWebView.h"
 #import "TWLButton.h"

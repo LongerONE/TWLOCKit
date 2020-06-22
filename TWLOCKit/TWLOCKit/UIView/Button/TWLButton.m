@@ -156,4 +156,11 @@
         self.touchUpInsideBlock(button);
     }
 }
+
+
+- (void)dealloc {
+    NSLog(@"dealloc tag: %ld", self.tag);
+}
+
+
 @end

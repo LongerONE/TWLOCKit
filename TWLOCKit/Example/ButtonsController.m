@@ -28,6 +28,16 @@
     [arr twl_addObject:a];
     [arr twl_addObject:b];
     
+    TWLButton *btn = [TWLButton buttonWithType:UIButtonTypeCustom];
+    btn.tag = 999;
+    TWL_weakify(btn);
+    [btn addTouchUpInsidBlock:^(TWLButton * _Nonnull twlBtn) {
+        TWL_strongify(btn);
+        TWLButton *btn2 = btn;
+        
+        twlBtn.backgroundColor = UIColor.redColor;
+    }];
+    
     NSLog(@"%@", arr.description);
 }
 

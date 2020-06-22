@@ -9,11 +9,13 @@
 #ifndef TWLConst_h
 #define TWLConst_h
 
+#pragma mark - Screen
 #define TWL_SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define TWL_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 #define TWL_SCREEN_SCALE [UIScreen mainScreen].scale
 #define TWL_ONE_PIXEL (1/[UIScreen mainScreen].scale)
 
+#pragma mark - Safe area
 #define TWL_SAFE_AREA_TOP [TWLUIUtil safeAreaTop]
 #define TWL_SAFE_AREA_BOTTOM [TWLUIUtil safeAreaBottom]
 #define TWL_SAFE_AREA_LEFT [TWLUIUtil safeAreaLeft]
@@ -24,8 +26,10 @@
 
 #define TWL_APPDELEGATE ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
+#pragma mark - Version
 #define TWL_iOSLater(x) @available(iOS x, *)
 
+#pragma mark - Block
 #define TWL_BLOCK_CALL_NO_P(block)\
 (block == nil ?: block());\
 
