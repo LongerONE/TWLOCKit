@@ -131,11 +131,15 @@
 
 - (void)setHighlightedBgColor:(UIColor *)highlightedBgColor {
     _highlightedBgColor = highlightedBgColor;
-    
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1.0, 1.0)];
-    view.backgroundColor = highlightedBgColor;
-    UIImage *image = [view twl_convertToImage];
-    [self setBackgroundImage:image forState:UIControlStateHighlighted];
+
+    [self setBackgroundImage:[highlightedBgColor twl_image] forState:UIControlStateHighlighted];
+}
+
+
+- (void)setDisableBgColor:(UIColor *)disableBgColor {
+    _disableBgColor = disableBgColor;
+
+    [self setBackgroundImage:[disableBgColor twl_image] forState:UIControlStateDisabled];
 }
 
 - (void)setSeletedBgColor:(UIColor *)seletedBgColor {

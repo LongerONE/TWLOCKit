@@ -36,6 +36,7 @@ IB_DESIGNABLE
 
 @property (nonatomic, strong) IBInspectable UIColor *highlightedBgColor;
 @property (nonatomic, strong) IBInspectable UIColor *seletedBgColor;
+@property (nonatomic, strong) IBInspectable UIColor *disableBgColor;
 
 typedef void(^TWLButtonBlock) (TWLButton *twlBtn);
 
