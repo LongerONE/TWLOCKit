@@ -52,6 +52,11 @@
 		E9C9877A2459277F001F1DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C987792459277F001F1DA6 /* Assets.xcassets */; };
 		E9C9877D2459277F001F1DA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C9877B2459277F001F1DA6 /* LaunchScreen.storyboard */; };
 		E9C987802459277F001F1DA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9877F2459277F001F1DA6 /* main.m */; };
+		E9DD77D224C682B300047647 /* StringController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DD77D024C682B300047647 /* StringController.m */; };
+		E9DD77D324C682B300047647 /* StringController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9DD77D124C682B300047647 /* StringController.xib */; };
+		E9E4580A24C9875300EDDABB /* TWLDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E4580924C9875300EDDABB /* TWLDownloader.m */; };
+		E9E4580E24C98F2E00EDDABB /* DownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E4580C24C98F2E00EDDABB /* DownloadController.m */; };
+		E9E4580F24C98F2E00EDDABB /* DownloadController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E4580D24C98F2E00EDDABB /* DownloadController.xib */; };
 		E9E9483A247F994E00DA2C41 /* NSDate+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E94839247F994E00DA2C41 /* NSDate+TWL.m */; };
 		E9F3A477246CF2D1001205AE /* PlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F3A475246CF2D1001205AE /* PlayerController.m */; };
 		E9F3A478246CF2D1001205AE /* PlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9F3A476246CF2D1001205AE /* PlayerController.xib */; };
@@ -142,6 +147,14 @@
 		E9C9877C2459277F001F1DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9C9877E2459277F001F1DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9C9877F2459277F001F1DA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9DD77CF24C682B300047647 /* StringController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringController.h; sourceTree = "<group>"; };
+		E9DD77D024C682B300047647 /* StringController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringController.m; sourceTree = "<group>"; };
+		E9DD77D124C682B300047647 /* StringController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StringController.xib; sourceTree = "<group>"; };
+		E9E4580824C9875300EDDABB /* TWLDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWLDownloader.h; sourceTree = "<group>"; };
+		E9E4580924C9875300EDDABB /* TWLDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWLDownloader.m; sourceTree = "<group>"; };
+		E9E4580B24C98F2E00EDDABB /* DownloadController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadController.h; sourceTree = "<group>"; };
+		E9E4580C24C98F2E00EDDABB /* DownloadController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadController.m; sourceTree = "<group>"; };
+		E9E4580D24C98F2E00EDDABB /* DownloadController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadController.xib; sourceTree = "<group>"; };
 		E9E94838247F994E00DA2C41 /* NSDate+TWL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+TWL.h"; sourceTree = "<group>"; };
 		E9E94839247F994E00DA2C41 /* NSDate+TWL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TWL.m"; sourceTree = "<group>"; };
 		E9F3A474246CF2D1001205AE /* PlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerController.h; sourceTree = "<group>"; };
@@ -188,6 +201,12 @@
 				E9AC438C247F549A007EC4C8 /* AlertViewController.h */,
 				E9AC438D247F549A007EC4C8 /* AlertViewController.m */,
 				E9AC438E247F549A007EC4C8 /* AlertViewController.xib */,
+				E9DD77CF24C682B300047647 /* StringController.h */,
+				E9DD77D024C682B300047647 /* StringController.m */,
+				E9DD77D124C682B300047647 /* StringController.xib */,
+				E9E4580B24C98F2E00EDDABB /* DownloadController.h */,
+				E9E4580C24C98F2E00EDDABB /* DownloadController.m */,
+				E9E4580D24C98F2E00EDDABB /* DownloadController.xib */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -243,6 +262,8 @@
 				E9735E48247DFB7D008C9D1D /* TWLVideoUtil.m */,
 				E9AC4391247F5E64007EC4C8 /* TWLAlert.h */,
 				E9AC4392247F5E64007EC4C8 /* TWLAlert.m */,
+				E9E4580824C9875300EDDABB /* TWLDownloader.h */,
+				E9E4580924C9875300EDDABB /* TWLDownloader.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -445,6 +466,7 @@
 			files = (
 				E9C9877D2459277F001F1DA6 /* LaunchScreen.storyboard in Resources */,
 				E983F29C24639E3A0023CB8A /* ButtonsController.xib in Resources */,
+				E9DD77D324C682B300047647 /* StringController.xib in Resources */,
 				E983F2AD2463A9F70023CB8A /* FieldController.xib in Resources */,
 				E9C9877A2459277F001F1DA6 /* Assets.xcassets in Resources */,
 				E9BC4227246E3C060092831E /* SecurityController.xib in Resources */,
@@ -453,6 +475,7 @@
 				E9F3A478246CF2D1001205AE /* PlayerController.xib in Resources */,
 				E983F2B62463B9DA0023CB8A /* TextViewController.xib in Resources */,
 				E9AC4390247F549A007EC4C8 /* AlertViewController.xib in Resources */,
+				E9E4580F24C98F2E00EDDABB /* DownloadController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +492,7 @@
 				E99F380A247235E9003F4D4C /* TWLLoadingButton.m in Sources */,
 				E99F37FB247235E9003F4D4C /* UIColor+TWL.m in Sources */,
 				E99F380B247235E9003F4D4C /* TWLSendCodeButton.m in Sources */,
+				E9E4580E24C98F2E00EDDABB /* DownloadController.m in Sources */,
 				E99F3805247235E9003F4D4C /* TWLVoicePlayer.m in Sources */,
 				E983F2A02463A5500023CB8A /* MyCustomGradientButton.m in Sources */,
 				E983F29B24639E3A0023CB8A /* ButtonsController.m in Sources */,
@@ -479,6 +503,7 @@
 				E99F37FC247235E9003F4D4C /* UIView+TWL.m in Sources */,
 				E9C987802459277F001F1DA6 /* main.m in Sources */,
 				E983F2A72463A8380023CB8A /* ImageViewsController.m in Sources */,
+				E9E4580A24C9875300EDDABB /* TWLDownloader.m in Sources */,
 				E99F380C247235E9003F4D4C /* TWLGradientButton.m in Sources */,
 				E99F3803247235E9003F4D4C /* NSMutableDictionary+TWL.m in Sources */,
 				E9AC4393247F5E64007EC4C8 /* TWLAlert.m in Sources */,
@@ -490,6 +515,7 @@
 				E9E9483A247F994E00DA2C41 /* NSDate+TWL.m in Sources */,
 				E99F380D247235E9003F4D4C /* TWLGradientNormalButton.m in Sources */,
 				E99F3809247235E9003F4D4C /* TWLImageView.m in Sources */,
+				E9DD77D224C682B300047647 /* StringController.m in Sources */,
 				E99F3810247235E9003F4D4C /* TWLSecurity.m in Sources */,
 				E99F3800247235E9003F4D4C /* NSMutableArray+TWL.m in Sources */,
 				E99F3808247235E9003F4D4C /* TWLTextField.m in Sources */,

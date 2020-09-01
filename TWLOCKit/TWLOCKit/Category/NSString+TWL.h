@@ -37,6 +37,45 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param width 宽度
 - (UIImage *)twl_qrcodeWithWidth:(CGFloat)width;
 
+
+
+/// 计算文本高度
+/// @param width 宽度
+/// @param font 字体
+- (CGFloat)twl_heightWithWidth:(CGFloat)width font:(UIFont *)font;
+
+/// 计算文本高度
+/// @param width 宽度
+/// @param size 字体大小
+- (CGFloat)twl_heightWithWidth:(CGFloat)width fontSize:(CGFloat)size;
+
+
+
+/// 计算文本高度
+/// @param width 宽度
+/// @param size 字体大小
+/// @param spacing 行距
+- (CGFloat)twl_heightWithWidth:(CGFloat)width fontSize:(CGFloat)size lineSpacing:(CGFloat)spacing;
+
+
+/// 计算文本宽度
+/// @param height 显示高度
+/// @param font 字体
+- (CGFloat)twl_widthWithHeight:(CGFloat)height font:(UIFont *)font;
+
+
+/// 计算文本宽度
+/// @param height 显示高度
+/// @param size 字体大小
+- (CGFloat)twl_widthWithHeight:(CGFloat)height fontSize:(CGFloat)size;
+
+
+/// 计算文本宽度
+/// @param height 显示高度
+/// @param size 字体大小
+/// @param spacing 行距
+- (CGFloat)twl_widthWithHeight:(CGFloat)height fontSize:(CGFloat)size lineSpacing:(CGFloat)spacing;
+
 @end
 
 NS_ASSUME_NONNULL_END

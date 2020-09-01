@@ -129,6 +129,13 @@
     self.imageView.contentMode = imageContentMode;
 }
 
+
+- (void)setBgColor:(UIColor *)bgColor {
+    _bgColor = bgColor;
+    
+    [self setBackgroundImage:[bgColor twl_image] forState:UIControlStateNormal];
+}
+
 - (void)setHighlightedBgColor:(UIColor *)highlightedBgColor {
     _highlightedBgColor = highlightedBgColor;
 

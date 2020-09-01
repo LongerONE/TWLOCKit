@@ -23,13 +23,15 @@
 
     
    VC_CONF_DICT = @{
+           @"String" : @"StringController",
            @"Buttons" : @"ButtonsController",
            @"ImageViews" : @"ImageViewsController",
            @"Fields" : @"FieldController",
            @"TextView" : @"TextViewController",
            @"Player" : @"PlayerController",
            @"Security" : @"SecurityController",
-           @"Alert" : @"AlertViewController"
+           @"Alert" : @"AlertViewController",
+           @"Download" : @"DownloadController"
        };
     
 }

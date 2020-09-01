@@ -72,7 +72,11 @@
 
 
 - (void)loadURL {
-    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];
+    if (self.url.length) {
+        [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];
+    } else if (self.filePath.length) {
+        [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:self.filePath]]];
+    }
 }
 
 

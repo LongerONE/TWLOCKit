@@ -13,7 +13,6 @@
 #import "UIView+TWL.h"
 #import "TWLBlocks.h"
 #import "TWLConst.h"
-#import "TWLOCKit.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -28,6 +27,8 @@ IB_DESIGNABLE
 
 /// 链接
 @property (nonatomic, copy) IBInspectable NSString *url;
+
+@property (nonatomic, copy) IBInspectable NSString *filePath;
 
 /// 是否显示加载进度条
 @property (nonatomic, assign) IBInspectable BOOL isShowLoadingBar;

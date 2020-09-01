@@ -120,5 +120,77 @@
 }
 
 
+- (CGFloat)twl_heightWithWidth:(CGFloat)width font:(UIFont *)font {
+    NSDictionary *attributes = @{NSFontAttributeName : font};
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
+                                     options:NSStringDrawingUsesLineFragmentOrigin
+                                  attributes:attributes
+                                     context:nil];
+    return ceil(rect.size.height) + 1;
+}
+
+- (CGFloat)twl_heightWithWidth:(CGFloat)width fontSize:(CGFloat)size {
+    NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:size]};
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
+                                     options:NSStringDrawingUsesLineFragmentOrigin
+                                  attributes:attributes
+                                     context:nil];
+    return ceil(rect.size.height) + 1;
+}
+
+
+- (CGFloat)twl_heightWithWidth:(CGFloat)width fontSize:(CGFloat)size lineSpacing:(CGFloat)spacing {
+    NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+    paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+    paragraphStyle.alignment = NSTextAlignmentLeft;
+    paragraphStyle.lineSpacing = spacing;
+    
+    NSDictionary* attributes = @{NSFontAttributeName : [UIFont systemFontOfSize:size],
+                                 NSParagraphStyleAttributeName: paragraphStyle};
+    
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
+                                     options:NSStringDrawingUsesLineFragmentOrigin
+                                  attributes:attributes
+                                     context:nil];
+    
+    return ceil(rect.size.height) + 1;
+}
+
+
+- (CGFloat)twl_widthWithHeight:(CGFloat)height font:(UIFont *)font {
+    NSDictionary *attributes = @{NSFontAttributeName : font};
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, height)
+                                     options:NSStringDrawingUsesLineFragmentOrigin
+                                  attributes:attributes
+                                     context:nil];
+    return ceil(rect.size.width) + 1;
+}
+
+- (CGFloat)twl_widthWithHeight:(CGFloat)height fontSize:(CGFloat)size {
+    NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:size]};
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, height)
+                                     options:NSStringDrawingUsesLineFragmentOrigin
+                                  attributes:attributes
+                                     context:nil];
+    return ceil(rect.size.width) + 1;
+}
+
+
+- (CGFloat)twl_widthWithHeight:(CGFloat)height fontSize:(CGFloat)size lineSpacing:(CGFloat)spacing {
+    NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+    paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+    paragraphStyle.alignment = NSTextAlignmentLeft;
+    paragraphStyle.lineSpacing = spacing;
+    
+    NSDictionary* attributes = @{NSFontAttributeName : [UIFont systemFontOfSize:size],
+                                 NSParagraphStyleAttributeName: paragraphStyle};
+    
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, height)
+                                     options:NSStringDrawingUsesLineFragmentOrigin
+                                  attributes:attributes
+                                     context:nil];
+    
+    return ceil(rect.size.width) + 1;
+}
 
 @end

@@ -34,6 +34,7 @@ IB_DESIGNABLE
 @property (nonatomic, assign) IBInspectable BOOL hasUnderLine;
 @property (nonatomic, assign) IBInspectable NSInteger imageContentMode;
 
+@property (nonatomic, strong) IBInspectable UIColor *bgColor;
 @property (nonatomic, strong) IBInspectable UIColor *highlightedBgColor;
 @property (nonatomic, strong) IBInspectable UIColor *seletedBgColor;
 @property (nonatomic, strong) IBInspectable UIColor *disableBgColor;
