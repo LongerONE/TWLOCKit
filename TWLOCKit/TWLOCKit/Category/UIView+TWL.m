@@ -130,4 +130,16 @@
 }
 
 
++ (instancetype)loadFromNib {
+    NSString *name = NSStringFromClass(self.class);
+    return [[[NSBundle mainBundle] loadNibNamed:name owner:nil options:nil] firstObject];
+}
+
++ (instancetype)loadFromNibWithIndex:(NSInteger)index {
+    NSString *name = NSStringFromClass(self.class);
+    return [[[NSBundle mainBundle] loadNibNamed:name owner:nil options:nil] objectAtIndex:index];
+}
+
+
+
 @end

@@ -31,7 +31,7 @@
            @"Player" : @"PlayerController",
            @"Security" : @"SecurityController",
            @"Alert" : @"AlertViewController",
-           @"Download" : @"DownloadController"
+           @"AlertView" : @"AlertController"
        };
     
 }
