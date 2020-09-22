@@ -30,9 +30,24 @@
     MenuView *view = [MenuView loadFromNib];
     view.maskAlpha = 0.6;
     view.canTapMaskDismiss = YES;
-    [view showCenterWithAnimation:TWLAlertViewAnimtaionFade finish:^{
+    view.bottomOffset = 10.0;
+    view.twl_w = TWL_SCREEN_WIDTH;
+//    [view showCenterWithAnimation:TWLAlertViewAnimtaionZoom finish:^{
+//        NSLog(@"MenuView animation finish.");
+//    }];
+    
+    
+    [view showBottomFinish:^{
         NSLog(@"MenuView animation finish.");
     }];
+
+    
+    [view setCancelBlock:^{
+        NSLog(@"MenuView cancel.");
+    }];
+    
+    
+    
     
 }
 

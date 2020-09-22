@@ -42,11 +42,15 @@ NS_ASSUME_NONNULL_BEGIN
 /// 遮罩透明度
 @property (nonatomic, assign) CGFloat maskAlpha;
 
+/// 底部位移，可用于隐藏圆角
+@property (nonatomic, assign) CGFloat bottomOffset;
 
 @property (nonatomic, copy) TWLVoidBlock cancelBlock;
 
 
 - (void)showCenterWithAnimation:(TWLAlertViewAnimtaion)animation finish:(TWLVoidBlock _Nullable)finishBlock;
+
+- (void)showBottomFinish:(TWLVoidBlock _Nullable)finishBlock;
 
 - (void)dismiss;
 
