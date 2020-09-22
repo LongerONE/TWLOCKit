@@ -12,7 +12,6 @@
 #import "TWLButton.h"
 #import "TWLMacro.h"
 #import "TWLConst.h"
-#import "AppDelegate.h"
 
 typedef NS_ENUM(NSInteger, TWLAlertViewMaskType) {
     TWLAlertViewMaskTypeClear = 0

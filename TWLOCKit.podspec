@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 	spec.name                  = "TWLOCKit"
-	spec.version               = "0.0.8"
+	spec.version               = "0.0.9"
 	spec.summary               = "Some quick functions for iOS."
 	spec.homepage              = "https://github.com/LongerONE/TWLOCKit"
 	spec.license               = "MIT"

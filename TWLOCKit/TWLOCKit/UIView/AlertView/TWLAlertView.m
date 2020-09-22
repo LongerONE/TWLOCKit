@@ -31,7 +31,7 @@
     [maskBtn addSubview:self];
     self.center = maskBtn.center;
     
-    [TWL_APPDELEGATE.window addSubview:maskBtn];
+    [UIApplication.sharedApplication.keyWindow addSubview:maskBtn];
     
     
     if (animation == TWLAlertViewAnimtaionZoom) {
@@ -85,7 +85,7 @@
     [maskBtn addSubview:self];
     self.twl_y = TWL_SCREEN_HEIGHT;
     
-    [TWL_APPDELEGATE.window addSubview:maskBtn];
+    [UIApplication.sharedApplication.keyWindow addSubview:maskBtn];
     
     
     [UIView animateWithDuration:0.3 animations:^{
