@@ -25,6 +25,12 @@
     return [numberPre evaluateWithObject:self];
 }
 
+- (BOOL)twl_isEmailAddress {
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:self];
+}
+
 
 + (NSString *)twl_randomStringWithLength:(int)length {
     //定义一个包含数字，大小写字母的字符串

@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)twl_isMobilePhoneNumber;
 
 
+- (BOOL)twl_isEmailAddress;
+
 - (NSString *)twl_md5;
 
 - (NSString *)twl_sha1;

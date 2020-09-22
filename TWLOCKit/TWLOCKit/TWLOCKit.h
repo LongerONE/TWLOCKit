@@ -82,8 +82,6 @@
 #import "TWLVideoUtil.h"
 #import "TWLAlert.h"
 
-#import "TWLDownloader.h"
-
 #endif
 
 #endif /* TWLHeader_h */

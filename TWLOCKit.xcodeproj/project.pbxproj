@@ -54,7 +54,6 @@
 		E9C987802459277F001F1DA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9877F2459277F001F1DA6 /* main.m */; };
 		E9DD77D224C682B300047647 /* StringController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DD77D024C682B300047647 /* StringController.m */; };
 		E9DD77D324C682B300047647 /* StringController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9DD77D124C682B300047647 /* StringController.xib */; };
-		E9E4580A24C9875300EDDABB /* TWLDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E4580924C9875300EDDABB /* TWLDownloader.m */; };
 		E9E4580E24C98F2E00EDDABB /* DownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E4580C24C98F2E00EDDABB /* DownloadController.m */; };
 		E9E4580F24C98F2E00EDDABB /* DownloadController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E4580D24C98F2E00EDDABB /* DownloadController.xib */; };
 		E9E9483A247F994E00DA2C41 /* NSDate+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E94839247F994E00DA2C41 /* NSDate+TWL.m */; };
@@ -150,8 +149,6 @@
 		E9DD77CF24C682B300047647 /* StringController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringController.h; sourceTree = "<group>"; };
 		E9DD77D024C682B300047647 /* StringController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringController.m; sourceTree = "<group>"; };
 		E9DD77D124C682B300047647 /* StringController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StringController.xib; sourceTree = "<group>"; };
-		E9E4580824C9875300EDDABB /* TWLDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWLDownloader.h; sourceTree = "<group>"; };
-		E9E4580924C9875300EDDABB /* TWLDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWLDownloader.m; sourceTree = "<group>"; };
 		E9E4580B24C98F2E00EDDABB /* DownloadController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadController.h; sourceTree = "<group>"; };
 		E9E4580C24C98F2E00EDDABB /* DownloadController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadController.m; sourceTree = "<group>"; };
 		E9E4580D24C98F2E00EDDABB /* DownloadController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadController.xib; sourceTree = "<group>"; };
@@ -262,8 +259,6 @@
 				E9735E48247DFB7D008C9D1D /* TWLVideoUtil.m */,
 				E9AC4391247F5E64007EC4C8 /* TWLAlert.h */,
 				E9AC4392247F5E64007EC4C8 /* TWLAlert.m */,
-				E9E4580824C9875300EDDABB /* TWLDownloader.h */,
-				E9E4580924C9875300EDDABB /* TWLDownloader.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -503,7 +498,6 @@
 				E99F37FC247235E9003F4D4C /* UIView+TWL.m in Sources */,
 				E9C987802459277F001F1DA6 /* main.m in Sources */,
 				E983F2A72463A8380023CB8A /* ImageViewsController.m in Sources */,
-				E9E4580A24C9875300EDDABB /* TWLDownloader.m in Sources */,
 				E99F380C247235E9003F4D4C /* TWLGradientButton.m in Sources */,
 				E99F3803247235E9003F4D4C /* NSMutableDictionary+TWL.m in Sources */,
 				E9AC4393247F5E64007EC4C8 /* TWLAlert.m in Sources */,
