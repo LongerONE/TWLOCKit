@@ -46,6 +46,7 @@
 #import <TWLOCKit/TWLVideoUtil.h>
 #import <TWLOCKit/TWLAlert.h>
 #import <TWLOCKit/TWLAlertView.h>
+#import <TWLOCKit/TWLDashView.h>
 
 #else
 
@@ -80,6 +81,7 @@
 #import "TWLVideoUtil.h"
 #import "TWLAlert.h"
 #import "TWLAlertView.h"
+#import "TWLDashView.h"
 
 #endif
 

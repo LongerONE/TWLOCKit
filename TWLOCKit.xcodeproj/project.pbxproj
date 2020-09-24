@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9375C0E251C971900D501A5 /* TWLDashView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9375C0D251C971900D501A5 /* TWLDashView.m */; };
 		E9735E49247DFB7D008C9D1D /* TWLVideoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9735E48247DFB7D008C9D1D /* TWLVideoUtil.m */; };
 		E983F29724639D630023CB8A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E983F29624639D630023CB8A /* TableViewController.m */; };
 		E983F29B24639E3A0023CB8A /* ButtonsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E983F29924639E3A0023CB8A /* ButtonsController.m */; };
@@ -66,6 +67,8 @@
 
 /* Begin PBXFileReference section */
 		E9097AEC24A0A29900FF5170 /* TWLMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWLMacro.h; sourceTree = "<group>"; };
+		E9375C0C251C971900D501A5 /* TWLDashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWLDashView.h; sourceTree = "<group>"; };
+		E9375C0D251C971900D501A5 /* TWLDashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWLDashView.m; sourceTree = "<group>"; };
 		E9735E47247DFB7D008C9D1D /* TWLVideoUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWLVideoUtil.h; sourceTree = "<group>"; };
 		E9735E48247DFB7D008C9D1D /* TWLVideoUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWLVideoUtil.m; sourceTree = "<group>"; };
 		E983F29524639D630023CB8A /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
@@ -350,6 +353,8 @@
 			children = (
 				E99F37F2247235E9003F4D4C /* TWLView.h */,
 				E99F37F3247235E9003F4D4C /* TWLView.m */,
+				E9375C0C251C971900D501A5 /* TWLDashView.h */,
+				E9375C0D251C971900D501A5 /* TWLDashView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -524,6 +529,7 @@
 				E99F3804247235E9003F4D4C /* TWLUIUtil.m in Sources */,
 				E983F2AC2463A9F70023CB8A /* FieldController.m in Sources */,
 				E99F3802247235E9003F4D4C /* NSArray+TWL.m in Sources */,
+				E9375C0E251C971900D501A5 /* TWLDashView.m in Sources */,
 				E9C9876F2459277D001F1DA6 /* AppDelegate.m in Sources */,
 				E99F37FC247235E9003F4D4C /* UIView+TWL.m in Sources */,
 				E9C987802459277F001F1DA6 /* main.m in Sources */,
