@@ -32,9 +32,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIImage *)twl_convertToImageWithAlpha;
 
 
-+ (instancetype)loadFromNib;
++ (instancetype)twl_loadFromNib;
 
-+ (instancetype)loadFromNibWithIndex:(NSInteger)index;
++ (instancetype)twl_loadFromNibWithIndex:(NSInteger)index;
 
 @end
 

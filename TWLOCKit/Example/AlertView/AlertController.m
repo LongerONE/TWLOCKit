@@ -27,7 +27,7 @@
 
 - (IBAction)alert:(UIButton *)sender {
     
-    MenuView *view = [MenuView loadFromNib];
+    MenuView *view = [MenuView twl_loadFromNib];
     view.maskAlpha = 0.6;
     view.canTapMaskDismiss = YES;
     view.bottomOffset = 10.0;

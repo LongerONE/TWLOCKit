@@ -37,6 +37,7 @@
 
 - (void)initActions {
     [self addTarget:self action:@selector(textDidChanged:) forControlEvents:UIControlEventEditingChanged];
+    [self addTarget:self action:@selector(editDidEnd:) forControlEvents:UIControlEventEditingDidEnd];
 }
 
 
@@ -45,6 +46,19 @@
         if (self.text.length > self.maxLength) {
             self.text = [self.text substringToIndex:self.maxLength];
         }
+    }
+    
+    __weak typeof(self) weakSelf = self;
+    if (self.inputUpdateBlock) {
+        self.inputUpdateBlock(weakSelf);
+    }
+}
+
+
+- (void)editDidEnd:(TWLTextField *)textField {
+    if (self.inputEndBlock) {
+        __weak typeof(self) weakSelf = self;
+        self.inputEndBlock(weakSelf);
     }
 }
 

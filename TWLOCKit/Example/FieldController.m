@@ -7,8 +7,12 @@
 //
 
 #import "FieldController.h"
+#import "TWLTextField.h"
 
 @interface FieldController ()
+
+@property (weak, nonatomic) IBOutlet TWLTextField *textField;
+
 
 @end
 
@@ -16,17 +20,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    [self.textField setInputUpdateBlock:^(TWLTextField * _Nonnull twlTextField) {
+        NSLog(@"%@", twlTextField.text);
+    }];
+    
+    [self.textField setInputEndBlock:^(TWLTextField * _Nonnull twlTextField) {
+        NSLog(@"Input end.");
+    }];
+    
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesEnded:touches withEvent:event];
+    
+    [self.view endEditing:YES];
 }
-*/
 
 @end

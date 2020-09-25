@@ -19,6 +19,9 @@ IB_DESIGNABLE
 /// 输入最大长度
 @property (nonatomic, assign) IBInspectable int maxLength;
 
+@property (nonatomic, copy) void(^inputUpdateBlock)(TWLTextField *twlTextField);
+
+@property (nonatomic, copy) void(^inputEndBlock)(TWLTextField *twlTextField);
 
 /// 初始化操作
 - (void)initActions;
