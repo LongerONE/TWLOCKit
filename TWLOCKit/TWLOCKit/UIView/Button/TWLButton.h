@@ -41,6 +41,8 @@ IB_DESIGNABLE
 
 typedef void(^TWLButtonBlock) (TWLButton *twlBtn);
 
+@property (nonatomic, copy) TWLButtonBlock touchUpInsideBlock;
+
 - (void)addTouchUpInsidBlock:(TWLButtonBlock)touchUpInsideBlock;
 
 

@@ -14,7 +14,7 @@
 
 @interface TWLButton()
 
-@property (nonatomic, copy) TWLButtonBlock touchUpInsideBlock;
+
 
 @end
 
@@ -47,7 +47,7 @@
 }
 
 - (void)initActions {
-    
+    [self addTarget:self action:@selector(touchUpInsideAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 
@@ -159,7 +159,6 @@
 #pragma mark - Block
 - (void)addTouchUpInsidBlock:(TWLButtonBlock)touchUpInsideBlock {
     self.touchUpInsideBlock = touchUpInsideBlock;
-    [self addTarget:self action:@selector(touchUpInsideAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)touchUpInsideAction:(TWLButton *)button {
