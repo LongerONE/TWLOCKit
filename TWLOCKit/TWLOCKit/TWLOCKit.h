@@ -28,6 +28,7 @@
 #import <TWLOCKit/TWLTextField.h>
 #import <TWLOCKit/TWLTextView.h>
 
+#import <TWLOCKit/CALayer+TWL.h>
 #import <TWLOCKit/NSDictionary+TWL.h>
 #import <TWLOCKit/NSMutableDictionary+TWL.h>
 #import <TWLOCKit/NSString+TWL.h>
@@ -64,6 +65,7 @@
 #import "TWLTextField.h"
 #import "TWLTextView.h"
 
+#import "CALayer+TWL.h"
 #import "NSDictionary+TWL.h"
 #import "NSMutableDictionary+TWL.h"
 #import "NSString+TWL.h"

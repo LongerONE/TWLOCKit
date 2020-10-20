@@ -19,6 +19,7 @@
 		E983F2AD2463A9F70023CB8A /* FieldController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E983F2AB2463A9F70023CB8A /* FieldController.xib */; };
 		E983F2B52463B9DA0023CB8A /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E983F2B32463B9DA0023CB8A /* TextViewController.m */; };
 		E983F2B62463B9DA0023CB8A /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E983F2B42463B9DA0023CB8A /* TextViewController.xib */; };
+		E988895A253E7771000F9CC7 /* CALayer+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = E9888958253E7771000F9CC7 /* CALayer+TWL.m */; };
 		E99847A625198A4D00EC7F22 /* TWLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E99847A525198A4D00EC7F22 /* TWLAlertView.m */; };
 		E99F37FB247235E9003F4D4C /* UIColor+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F37C3247235E8003F4D4C /* UIColor+TWL.m */; };
 		E99F37FC247235E9003F4D4C /* UIView+TWL.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F37C4247235E8003F4D4C /* UIView+TWL.m */; };
@@ -87,6 +88,8 @@
 		E983F2B22463B9DA0023CB8A /* TextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 		E983F2B32463B9DA0023CB8A /* TextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		E983F2B42463B9DA0023CB8A /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
+		E9888958253E7771000F9CC7 /* CALayer+TWL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+TWL.m"; sourceTree = "<group>"; };
+		E9888959253E7771000F9CC7 /* CALayer+TWL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+TWL.h"; sourceTree = "<group>"; };
 		E99847A425198A4D00EC7F22 /* TWLAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWLAlertView.h; sourceTree = "<group>"; };
 		E99847A525198A4D00EC7F22 /* TWLAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWLAlertView.m; sourceTree = "<group>"; };
 		E99F37C2247235E8003F4D4C /* UIImage+TWL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TWL.h"; sourceTree = "<group>"; };
@@ -242,8 +245,12 @@
 		E99F37C1247235E8003F4D4C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				E9888959253E7771000F9CC7 /* CALayer+TWL.h */,
+				E9888958253E7771000F9CC7 /* CALayer+TWL.m */,
 				E99F37C9247235E9003F4D4C /* NSArray+TWL.h */,
 				E99F37D0247235E9003F4D4C /* NSArray+TWL.m */,
+				E9E94838247F994E00DA2C41 /* NSDate+TWL.h */,
+				E9E94839247F994E00DA2C41 /* NSDate+TWL.m */,
 				E99F37CD247235E9003F4D4C /* NSDictionary+TWL.h */,
 				E99F37C6247235E8003F4D4C /* NSDictionary+TWL.m */,
 				E99F37D1247235E9003F4D4C /* NSMutableArray+TWL.h */,
@@ -260,8 +267,6 @@
 				E99F37CC247235E9003F4D4C /* UIImage+TWL.m */,
 				E99F37CF247235E9003F4D4C /* UIView+TWL.h */,
 				E99F37C4247235E8003F4D4C /* UIView+TWL.m */,
-				E9E94838247F994E00DA2C41 /* NSDate+TWL.h */,
-				E9E94839247F994E00DA2C41 /* NSDate+TWL.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -543,6 +548,7 @@
 				E9AC438F247F549A007EC4C8 /* AlertViewController.m in Sources */,
 				E99F3806247235E9003F4D4C /* TWLTextView.m in Sources */,
 				E9E9483A247F994E00DA2C41 /* NSDate+TWL.m in Sources */,
+				E988895A253E7771000F9CC7 /* CALayer+TWL.m in Sources */,
 				E99F380D247235E9003F4D4C /* TWLGradientNormalButton.m in Sources */,
 				E99F3809247235E9003F4D4C /* TWLImageView.m in Sources */,
 				E9DD77D224C682B300047647 /* StringController.m in Sources */,
