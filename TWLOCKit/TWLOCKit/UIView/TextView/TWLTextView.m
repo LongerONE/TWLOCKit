@@ -51,6 +51,16 @@
     [self addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionNew context:nil];
 }
 
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    [self.countLbl sizeToFit];
+    self.countLbl.twl_bottom = self.twl_h - self.showCountBottom;
+    self.countLbl.twl_right = self.twl_w - self.showCountRight;
+}
+
+
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     if ([keyPath isEqualToString:@"text"]) {
         [self textUpdated:NO];
