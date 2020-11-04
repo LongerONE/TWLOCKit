@@ -31,8 +31,7 @@
     [maskBtn addSubview:self];
     self.center = maskBtn.center;
     
-    [UIApplication.sharedApplication.keyWindow addSubview:maskBtn];
-    
+    [[[[UIApplication sharedApplication] delegate] window] addSubview:maskBtn];
     
     if (animation == TWLAlertViewAnimtaionZoom) {
         self.transform = CGAffineTransformMakeScale(0.7, 0.7);
@@ -85,8 +84,7 @@
     [maskBtn addSubview:self];
     self.twl_y = TWL_SCREEN_HEIGHT;
     
-    [UIApplication.sharedApplication.keyWindow addSubview:maskBtn];
-    
+    [[[[UIApplication sharedApplication] delegate] window] addSubview:maskBtn];
     
     [UIView animateWithDuration:0.3 animations:^{
         maskBtn.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:self.maskAlpha];
