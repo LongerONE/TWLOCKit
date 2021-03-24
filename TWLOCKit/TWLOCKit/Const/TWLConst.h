@@ -24,7 +24,7 @@
 #define TWL_WEAKSELF __weak typeof(self)weakSelf = self;
 #define TWL_STRONGSELF __strong __typeof(weakSelf)strongSelf = weakSelf;
 
-#define TWL_APPDELEGATE ((AppDelegate *)[UIApplication sharedApplication].delegate)
+#define TWL_APPDELEGATE [[UIApplication sharedApplication] delegate]
 
 #pragma mark - Version
 #define TWL_iOSLater(x) @available(iOS x, *)

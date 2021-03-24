@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 当前毫秒级时间戳
 + (NSString *)twl_nowTimeIntervalMSString;
 
+
+- (NSString *)twl_stringWithFormat:(NSString *)dateFormat;
+
 @end
 
 NS_ASSUME_NONNULL_END

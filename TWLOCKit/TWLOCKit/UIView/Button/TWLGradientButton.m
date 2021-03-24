@@ -63,9 +63,12 @@
 }
 
 
+
 - (void)layoutSubviews {
     [super layoutSubviews];
     
+    [self.gradientLayer removeFromSuperlayer];
+    [self.layer insertSublayer:_gradientLayer atIndex:0];
     self.gradientLayer.frame = self.bounds;
 }
 

@@ -168,9 +168,5 @@
 }
 
 
-- (void)dealloc {
-    NSLog(@"dealloc tag: %ld", self.tag);
-}
-
 
 @end

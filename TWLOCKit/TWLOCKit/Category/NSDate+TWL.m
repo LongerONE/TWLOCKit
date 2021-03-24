@@ -24,4 +24,10 @@
 }
 
 
+- (NSString *)twl_stringWithFormat:(NSString *)dateFormat {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = dateFormat;
+    return [formatter stringFromDate:self];
+}
+
 @end
