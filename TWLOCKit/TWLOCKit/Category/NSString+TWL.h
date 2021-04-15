@@ -25,8 +25,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否为手机号
 - (BOOL)twl_isMobilePhoneNumber;
 
-
+/// 邮箱地址验证
 - (BOOL)twl_isEmailAddress;
+
+/// 身份证号码验证
+- (BOOL)twl_isChineseIdCardNumer;
 
 - (NSString *)twl_md5;
 

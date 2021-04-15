@@ -11,9 +11,7 @@
 
 @interface TWLTextView ()
 
-@property (nonatomic, strong) UILabel *placeholderLbl;
 
-@property (nonatomic, strong) UILabel *countLbl;
 
 @end
 
@@ -56,6 +54,7 @@
     [super layoutSubviews];
     
     [self.countLbl sizeToFit];
+    [self.placeholderLbl sizeToFit];
     self.countLbl.twl_bottom = self.twl_h - self.showCountBottom;
     self.countLbl.twl_right = self.twl_w - self.showCountRight;
 }
@@ -73,6 +72,7 @@
         _placeholderLbl.font = [UIFont systemFontOfSize:14.0];
         _placeholderLbl.textColor = UIColor.lightGrayColor;
         _placeholderLbl.hidden = self.text.length > 0;
+        _placeholderLbl.numberOfLines = 0;
         _placeholderLbl.twl_left = self.placeholderLeft;
         _placeholderLbl.twl_top = self.placeholderTop;
         [self addSubview:_placeholderLbl];
@@ -106,6 +106,7 @@
     _placeholderLeft = placeholderLeft;
     
     self.placeholderLbl.twl_left = placeholderLeft;
+    self.placeholderLbl.twl_w = self.twl_w - 2 * placeholderLeft;
 }
 
 

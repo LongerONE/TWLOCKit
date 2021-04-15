@@ -15,6 +15,10 @@ typedef void(^TWLTextViewUpdateBlock)(NSString *stringResult, BOOL isInput);
 IB_DESIGNABLE
 @interface TWLTextView : UITextView
 
+@property (nonatomic, strong) UILabel *placeholderLbl;
+
+@property (nonatomic, strong) UILabel *countLbl;
+
 @property (nonatomic, copy) IBInspectable NSString *placeholder;
 @property (nonatomic, assign) IBInspectable CGFloat placeholderLeft;
 @property (nonatomic, assign) IBInspectable CGFloat placeholderTop;

@@ -32,6 +32,13 @@
 }
 
 
+- (BOOL)twl_isChineseIdCardNumer {
+    NSString *pattern = @"(^[0-9]{15}$)|([0-9]{17}([0-9]|X|x)$)";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    BOOL isMatch = [pred evaluateWithObject:self];
+    return isMatch;
+}
+
 + (NSString *)twl_randomStringWithLength:(int)length {
     //定义一个包含数字，大小写字母的字符串
     NSString * strAll = @"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
