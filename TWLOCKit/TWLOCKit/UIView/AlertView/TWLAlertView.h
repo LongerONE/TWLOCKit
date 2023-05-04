@@ -29,20 +29,23 @@ typedef NS_ENUM(NSInteger, TWLAlertViewPostion) {
 
 NS_ASSUME_NONNULL_BEGIN
 
+IB_DESIGNABLE
 @interface TWLAlertView : TWLView
 
 
 /// 是否可点击空白处返回
-@property (nonatomic, assign) BOOL canTapMaskDismiss;
+@property (nonatomic, assign) IBInspectable BOOL canTapMaskDismiss;
+
+@property (nonatomic, assign) IBInspectable BOOL isScreenWidth;
 
 /// 遮罩类型
 @property (nonatomic, assign) TWLAlertViewMaskType maskType;
 
 /// 遮罩透明度
-@property (nonatomic, assign) CGFloat maskAlpha;
+@property (nonatomic, assign) IBInspectable CGFloat maskAlpha;
 
 /// 底部位移，可用于隐藏圆角
-@property (nonatomic, assign) CGFloat bottomOffset;
+@property (nonatomic, assign) IBInspectable  CGFloat bottomOffset;
 
 @property (nonatomic, copy) TWLVoidBlock cancelBlock;
 

@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param finishBlock finishBlock description
 - (void)twl_convertToBlurImageWithRadius:(float)radius finish:(void(^)(UIImage *image))finishBlock;
 
+
+- (void)twl_compressWithSize:(CGSize)size finish:(void(^)(UIImage *image))finishBlock;
+
 @end
 
 NS_ASSUME_NONNULL_END

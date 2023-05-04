@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 IB_DESIGNABLE
 @interface TWLButton : UIButton
 
+@property (nonatomic, weak) id bindObj;
+
 @property (nonatomic, copy) IBInspectable NSString *identifier;
 
 /// 一个像素的描边

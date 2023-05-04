@@ -14,6 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 IB_DESIGNABLE
 @interface TWLTextField : UITextField
 
+
+@property (nonatomic, weak) id bindObj;
+
+@property (nonatomic, copy) IBInspectable NSString *identifier;
+
 @property (nonatomic, strong) IBInspectable UIColor *placeholderColor;
 
 /// 输入最大长度

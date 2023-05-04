@@ -31,7 +31,8 @@
            @"Player" : @"PlayerController",
            @"Security" : @"SecurityController",
            @"Alert" : @"AlertViewController",
-           @"AlertView" : @"AlertController"
+           @"AlertView" : @"AlertController",
+           @"ImageList" : @"ImagesListVC"
        };
     
 }

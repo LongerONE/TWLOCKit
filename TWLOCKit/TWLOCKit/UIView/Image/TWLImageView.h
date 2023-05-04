@@ -13,11 +13,15 @@ NS_ASSUME_NONNULL_BEGIN
 IB_DESIGNABLE
 @interface TWLImageView : UIImageView
 
+@property (nonatomic, weak) id bindObj;
 
 @property (nonatomic, copy) IBInspectable NSString *identifier;
 
 /// 一个像素的描边
 @property (nonatomic, assign) IBInspectable BOOL onePixelBorder;
+
+// 优化内存，只显示实际大小尺寸的图片
+@property (nonatomic, assign) IBInspectable BOOL optimizeMem;
 
 @property (nonatomic, strong) IBInspectable UIColor *borderColor;
 @property (nonatomic, assign) IBInspectable CGFloat cornerRadius;
@@ -27,6 +31,11 @@ IB_DESIGNABLE
 @property (nonatomic, assign) IBInspectable CGSize shadowOffset;
 @property (nonatomic, assign) IBInspectable CGFloat shadowRadius;
 @property (nonatomic, assign) IBInspectable CGFloat shadowOpacity;
+
+
+@property (nonatomic, assign) IBInspectable UIImage *placeholderImg;
+
+@property (nonatomic, copy) NSString *imgUrl;
 
 @end
 

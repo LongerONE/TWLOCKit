@@ -20,8 +20,16 @@
 @implementation TWLAlertView
 
 
+
+
+
+
 - (void)showCenterWithAnimation:(TWLAlertViewAnimtaion)animation finish:(TWLVoidBlock _Nullable)finishBlock {
     self.alpha = 0.0;
+    if (self.isScreenWidth) {
+        self.twl_w = TWL_SCREEN_WIDTH;
+    }
+    
     self.position = TWLAlertViewPostionCenter;
     self.animation = animation;
     TWLButton *maskBtn = [TWLButton buttonWithType:UIButtonTypeCustom];
@@ -75,6 +83,10 @@
 
 
 - (void)showBottomFinish:(TWLVoidBlock _Nullable)finishBlock {
+    if (self.isScreenWidth) {
+        self.twl_w = TWL_SCREEN_WIDTH;
+    }
+    
     self.position = TWLAlertViewPostionBottom;
     
     TWLButton *maskBtn = [TWLButton buttonWithType:UIButtonTypeCustom];

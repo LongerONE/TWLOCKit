@@ -24,7 +24,7 @@
 
 - (NSMutableArray *)colorsArray {
     if (!_colorsArray) {
-        _colorsArray = [NSMutableArray arrayWithCapacity:2];
+        _colorsArray = [NSMutableArray arrayWithArray:@[UIColor.clearColor, UIColor.clearColor]];
         self.gradientLocationArray = @[@0.0, @1.0];
     }
     

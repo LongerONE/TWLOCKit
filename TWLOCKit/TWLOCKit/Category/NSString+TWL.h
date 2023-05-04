@@ -31,6 +31,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// 身份证号码验证
 - (BOOL)twl_isChineseIdCardNumer;
 
+
+
+- (NSDate * _Nullable)twl_dateFromFormat:(NSString *)format;
+
+- (NSDate * _Nullable)twl_toDate;
+
+
+
+- (NSString *)twl_toUrlEncode;
+
+
+
 - (NSString *)twl_md5;
 
 - (NSString *)twl_sha1;

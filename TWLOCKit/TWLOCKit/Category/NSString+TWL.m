@@ -133,6 +133,75 @@
 }
 
 
+- (NSDate * _Nullable)twl_dateFromFormat:(NSString *)format {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = format;
+    return [formatter dateFromString:self];
+}
+
+- (NSDate *)twl_toDate {
+    NSDate *date;
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    if ([self containsString:@"-"]) {
+        NSArray<NSString *> *formats = @[
+            @"yyyy-MM-dd",
+            @"MM-dd HH:mm",
+            @"MM-dd HH:mm:ss",
+            @"yyyy-MM-dd HH:mm",
+            @"yyyy-MM-dd HH:mm:ss"
+        ];
+        [formats enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            if (self.length == obj.length) {
+                formatter.dateFormat = obj;
+            }
+        }];
+        date = [formatter dateFromString:self];
+    } else if ([self containsString:@"年"]) {
+        NSArray<NSString *> *formats = @[
+            @"yyyy年MM月dd日",
+            @"yyyy年MM月dd日 HH时mm分",
+            @"yyyy年MM月dd日 HH时mm分ss秒"
+        ];
+        [formats enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            if (self.length == obj.length) {
+                formatter.dateFormat = obj;
+            }
+        }];
+        date = [formatter dateFromString:self];
+    }
+    
+    
+    return date;
+}
+
+
+
+
+
+
+- (NSString *)twl_toUrlEncode {
+    if ([self containsString:@"%%@"]) {
+        return self;
+    } else {
+        return [self stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLQueryAllowedCharacterSet];
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - (CGFloat)twl_heightWithWidth:(CGFloat)width font:(UIFont *)font {
     NSDictionary *attributes = @{NSFontAttributeName : font};
     CGRect rect = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
