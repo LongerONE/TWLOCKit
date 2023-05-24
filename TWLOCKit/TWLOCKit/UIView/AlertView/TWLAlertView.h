@@ -44,6 +44,8 @@ IB_DESIGNABLE
 /// 遮罩透明度
 @property (nonatomic, assign) IBInspectable CGFloat maskAlpha;
 
+@property (nonatomic, assign) IBInspectable BOOL adaptKeyboard;
+
 /// 底部位移，可用于隐藏圆角
 @property (nonatomic, assign) IBInspectable  CGFloat bottomOffset;
 

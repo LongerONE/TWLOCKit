@@ -20,7 +20,40 @@
 @implementation TWLAlertView
 
 
-
+- (void)setAdaptKeyboard:(BOOL)adaptKeyboard {
+    _adaptKeyboard = adaptKeyboard;
+    
+    if (adaptKeyboard) {
+        TWL_WEAKSELF;
+        [[NSNotificationCenter defaultCenter] addObserverForName:UIKeyboardWillChangeFrameNotification object:nil queue:NSOperationQueue.mainQueue usingBlock:^(NSNotification * _Nonnull note) {
+            CGRect rect = [[note.userInfo objectForKey:@"UIKeyboardFrameEndUserInfoKey"] CGRectValue];
+            NSTimeInterval aniTime = [[note.userInfo objectForKey:@"UIKeyboardAnimationDurationUserInfoKey"] floatValue];
+            NSNumber *ops = [note.userInfo objectForKey:@"UIKeyboardAnimationCurveUserInfoKey"];
+            [UIView animateWithDuration:aniTime delay:0.0 options:ops.intValue animations:^{
+                if (TWL_SCREEN_HEIGHT - rect.size.height < weakSelf.twl_y + weakSelf.twl_h) {
+                    weakSelf.twl_y = TWL_SCREEN_HEIGHT - rect.size.height - weakSelf.twl_h + weakSelf.bottomOffset;
+                }
+            } completion:^(BOOL finished) {
+                
+            }];
+        }];
+        
+        [[NSNotificationCenter defaultCenter] addObserverForName:UIKeyboardWillHideNotification object:nil queue:NSOperationQueue.mainQueue usingBlock:^(NSNotification * _Nonnull note) {
+            NSTimeInterval aniTime = [[note.userInfo objectForKey:@"UIKeyboardAnimationDurationUserInfoKey"] floatValue];
+            NSNumber *ops = [note.userInfo objectForKey:@"UIKeyboardAnimationCurveUserInfoKey"];
+            [UIView animateWithDuration:aniTime delay:0.0 options:ops.intValue animations:^{
+                if (weakSelf.position == TWLAlertViewPostionBottom) {
+                    weakSelf.twl_y = TWL_SCREEN_HEIGHT + weakSelf.bottomOffset - weakSelf.twl_h;
+                } else {
+                    weakSelf.center = weakSelf.superview.center;
+                }
+            } completion:^(BOOL finished) {
+              
+            }];
+        }];
+        
+    }
+}
 
 
 
