@@ -51,6 +51,8 @@ IB_DESIGNABLE
 /// Navigation Action 回调处理
 @property (nonatomic, copy, nullable) TWLWebViewNavigationBlock navigationActionBlock;
 
+- (void)addUserScript:(WKUserScript *)script;
+
 /// 注入 JS 代码
 /// @param js js description
 /// @param completeBlock completeBlock description

@@ -11,6 +11,7 @@
 
 @interface TWLWebView()<WKUIDelegate, WKNavigationDelegate>
 
+@property (nonatomic, strong) WKWebViewConfiguration *conf;
 @property (nonatomic, strong) TWLView *loadingBarView;
 @property (nonatomic, assign) CGFloat currentContentHeight;
 
@@ -20,10 +21,21 @@
 @implementation TWLWebView
 
 
+- (WKWebViewConfiguration *)conf {
+    if (!_conf) {
+        _conf = [[WKWebViewConfiguration alloc] init];
+        _conf.userContentController = [[WKUserContentController alloc] init];
+    }
+    return _conf;
+}
+
+- (void)addUserScript:(WKUserScript *)script {
+    [self.conf.userContentController addUserScript:script];
+}
+
 - (WKWebView *)wkWebView {
     if (!_wkWebView) {
-        WKWebViewConfiguration *conf = [[WKWebViewConfiguration alloc] init];
-        _wkWebView = [[WKWebView alloc] initWithFrame:CGRectZero configuration:conf];
+        _wkWebView = [[WKWebView alloc] initWithFrame:CGRectZero configuration:self.conf];
         _wkWebView.UIDelegate = self;
         _wkWebView.navigationDelegate = self;
         [_wkWebView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
