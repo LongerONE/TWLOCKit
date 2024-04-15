@@ -11,7 +11,6 @@
 
 @interface TWLWebView()<WKUIDelegate, WKNavigationDelegate>
 
-@property (nonatomic, strong) WKWebViewConfiguration *conf;
 @property (nonatomic, strong) TWLView *loadingBarView;
 @property (nonatomic, assign) CGFloat currentContentHeight;
 
@@ -27,10 +26,6 @@
         _conf.userContentController = [[WKUserContentController alloc] init];
     }
     return _conf;
-}
-
-- (void)addUserScript:(WKUserScript *)script {
-    [self.conf.userContentController addUserScript:script];
 }
 
 - (WKWebView *)wkWebView {

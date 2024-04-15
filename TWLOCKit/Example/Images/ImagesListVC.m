@@ -30,26 +30,7 @@
         @"https://images.pexels.com/photos/14454925/pexels-photo-14454925.jpeg",
         @"https://images.pexels.com/photos/15302393/pexels-photo-15302393.jpeg",
         @"https://images.pexels.com/photos/15413559/pexels-photo-15413559.jpeg",
-        @"https://images.pexels.com/photos/13444728/pexels-photo-13444728.jpeg",
-        @"https://images.pexels.com/photos/16117986/pexels-photo-16117986.jpeg",
-        @"https://images.pexels.com/photos/14454925/pexels-photo-14454925.jpeg",
-        @"https://images.pexels.com/photos/15302393/pexels-photo-15302393.jpeg",
-        @"https://images.pexels.com/photos/15413559/pexels-photo-15413559.jpeg",
-        @"https://images.pexels.com/photos/13444728/pexels-photo-13444728.jpeg",
-        @"https://images.pexels.com/photos/16117986/pexels-photo-16117986.jpeg",
-        @"https://images.pexels.com/photos/14454925/pexels-photo-14454925.jpeg",
-        @"https://images.pexels.com/photos/15302393/pexels-photo-15302393.jpeg",
-        @"https://images.pexels.com/photos/15413559/pexels-photo-15413559.jpeg",
-        @"https://images.pexels.com/photos/13444728/pexels-photo-13444728.jpeg",
-        @"https://images.pexels.com/photos/16117986/pexels-photo-16117986.jpeg",
-        @"https://images.pexels.com/photos/14454925/pexels-photo-14454925.jpeg",
-        @"https://images.pexels.com/photos/15302393/pexels-photo-15302393.jpeg",
-        @"https://images.pexels.com/photos/15413559/pexels-photo-15413559.jpeg",
-        @"https://images.pexels.com/photos/13444728/pexels-photo-13444728.jpeg",        @"https://images.pexels.com/photos/16117986/pexels-photo-16117986.jpeg",
-        @"https://images.pexels.com/photos/14454925/pexels-photo-14454925.jpeg",
-        @"https://images.pexels.com/photos/15302393/pexels-photo-15302393.jpeg",
-        @"https://images.pexels.com/photos/15413559/pexels-photo-15413559.jpeg",
-        @"https://images.pexels.com/photos/13444728/pexels-photo-13444728.jpeg",
+        @"https://images.pexels.com/photos/13444728/pexels-photo-13444728.jpeg"
     ];
     [self.tableView reloadData];
 }

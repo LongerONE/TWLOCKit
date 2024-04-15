@@ -22,6 +22,9 @@ typedef WKNavigationActionPolicy(^TWLWebViewNavigationBlock)(WKNavigationAction 
 IB_DESIGNABLE
 @interface TWLWebView : TWLView
 
+
+@property (nonatomic, strong) WKWebViewConfiguration *conf;
+
 /// webView
 @property (nonatomic, strong) WKWebView *wkWebView;
 
@@ -50,8 +53,6 @@ IB_DESIGNABLE
 
 /// Navigation Action 回调处理
 @property (nonatomic, copy, nullable) TWLWebViewNavigationBlock navigationActionBlock;
-
-- (void)addUserScript:(WKUserScript *)script;
 
 /// 注入 JS 代码
 /// @param js js description

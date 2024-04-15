@@ -142,6 +142,9 @@
 - (NSDate *)twl_toDate {
     NSDate *date;
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Shanghai"]];
+    [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
+    
     if ([self containsString:@"-"]) {
         NSArray<NSString *> *formats = @[
             @"yyyy-MM-dd",
