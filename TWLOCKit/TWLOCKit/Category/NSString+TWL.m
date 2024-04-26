@@ -144,21 +144,35 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Shanghai"]];
     [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
+
     
     if ([self containsString:@"-"]) {
-        NSArray<NSString *> *formats = @[
-            @"yyyy-MM-dd",
-            @"MM-dd HH:mm",
-            @"MM-dd HH:mm:ss",
-            @"yyyy-MM-dd HH:mm",
-            @"yyyy-MM-dd HH:mm:ss"
-        ];
-        [formats enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            if (self.length == obj.length) {
-                formatter.dateFormat = obj;
-            }
-        }];
-        date = [formatter dateFromString:self];
+        if ([self containsString:@"T"]) {
+            NSArray<NSString *> *formats = @[
+                @"yyyy-MM-dd'T'HH:mm",
+                @"yyyy-MM-dd'T'HH:mm:ss",
+            ];
+            [formats enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                if (self.length == obj.length - 2) {
+                    formatter.dateFormat = obj;
+                }
+            }];
+            date = [formatter dateFromString:self];
+        } else {
+            NSArray<NSString *> *formats = @[
+                @"yyyy-MM-dd",
+                @"MM-dd HH:mm",
+                @"MM-dd HH:mm:ss",
+                @"yyyy-MM-dd HH:mm",
+                @"yyyy-MM-dd HH:mm:ss"
+            ];
+            [formats enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                if (self.length == obj.length) {
+                    formatter.dateFormat = obj;
+                }
+            }];
+            date = [formatter dateFromString:self];
+        }
     } else if ([self containsString:@"年"]) {
         NSArray<NSString *> *formats = @[
             @"yyyy年MM月dd日",
@@ -176,6 +190,8 @@
     
     return date;
 }
+
+
 
 
 
