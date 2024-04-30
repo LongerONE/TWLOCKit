@@ -25,9 +25,20 @@
 
 
 - (NSString *)twl_stringWithFormat:(NSString *)dateFormat {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    NSDateFormatter *formatter = [NSDate twl_formatter];
+    
     formatter.dateFormat = dateFormat;
     return [formatter stringFromDate:self];
 }
+
+
++ (NSDateFormatter *)twl_formatter {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Shanghai"]];
+    [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
+    
+    return formatter;
+}
+
 
 @end

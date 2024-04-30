@@ -112,7 +112,8 @@ typedef void(^TWLCompressionSuccessBlock)(NSString *resultPath, float memorySize
         // 所支持的压缩格式中是否有 所选的压缩格式
         if ([compatiblePresets containsObject:compressionType]) {
             AVAssetExportSession *exportSession = [[AVAssetExportSession alloc] initWithAsset:avAsset presetName:compressionType];
-            NSDateFormatter *formater = [[NSDateFormatter alloc] init];// 用时间, 给文件重新命名, 防止视频存储覆盖,
+            NSDateFormatter *formater = [NSDate twl_formatter];
+            
             [formater setDateFormat:@"yyyy-MM-dd-HH:mm:ss"];
             NSFileManager *manager = [NSFileManager defaultManager];
             BOOL isExists = [manager fileExistsAtPath:CompressionVideoPath];

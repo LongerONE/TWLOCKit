@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)twl_nowTimeIntervalMSString;
 
 
++ (NSDateFormatter *)twl_formatter;
+
+
 - (NSString *)twl_stringWithFormat:(NSString *)dateFormat;
 
 @end

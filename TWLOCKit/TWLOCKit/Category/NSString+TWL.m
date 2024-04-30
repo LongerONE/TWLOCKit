@@ -134,18 +134,15 @@
 
 
 - (NSDate * _Nullable)twl_dateFromFormat:(NSString *)format {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    NSDateFormatter *formatter = [NSDate twl_formatter];
     formatter.dateFormat = format;
     return [formatter dateFromString:self];
 }
 
 - (NSDate *)twl_toDate {
     NSDate *date;
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Shanghai"]];
-    [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
+    NSDateFormatter *formatter = [NSDate twl_formatter];
 
-    
     if ([self containsString:@"-"]) {
         if ([self containsString:@"T"]) {
             NSArray<NSString *> *formats = @[
