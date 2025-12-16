@@ -34,7 +34,7 @@
 
 + (NSDateFormatter *)twl_formatter {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Shanghai"]];
+    [formatter setTimeZone:[NSTimeZone systemTimeZone]];
     [formatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
     
     return formatter;
